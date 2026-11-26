@@ -1,6 +1,6 @@
 media:
-  input: img
-  output: /img
+  input: .
+  output: /
 content:
   - name: site
     label: Website content

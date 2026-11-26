@@ -37,9 +37,9 @@
   "menu": {
     "build": {
       "bases": [
-        { "name": "Pita", "text": "Fresh pita, a protein, 3 toppings and a sauce.", "image": "/img/gyro-pita.jpg" },
-        { "name": "Wrap", "text": "Toasted wrap, a protein, 4 toppings and a sauce.", "image": "/img/chicken-wrap.jpg" },
-        { "name": "Bowl", "text": "Rice, hummus or lettuce, a protein, 5 toppings and a sauce.", "image": "/img/bowl.jpg" }
+        { "name": "Pita", "text": "Fresh pita, a protein, 3 toppings and a sauce.", "image": "/gyro-pita.jpg" },
+        { "name": "Wrap", "text": "Toasted wrap, a protein, 4 toppings and a sauce.", "image": "/chicken-wrap.jpg" },
+        { "name": "Bowl", "text": "Rice, hummus or lettuce, a protein, 5 toppings and a sauce.", "image": "/bowl.jpg" }
       ],
       "combo": "Make it a combo: add fries, rice or soup with a fountain drink.",
       "proteins": ["Chicken Shawarma", "Steak Shawarma", "Grilled Chicken", "Gyros", "Falafel"],
@@ -47,18 +47,18 @@
       "sauces": ["Tahini", "Garlic", "White", "Fire"]
     },
     "signatures": [
-      { "name": "Chicken Over Rice", "text": "Grilled chicken, tomatoes, lettuce and our famous white & fire sauce with toasted pita.", "image": "/img/chicken-over-rice.jpg" },
+      { "name": "Chicken Over Rice", "text": "Grilled chicken, tomatoes, lettuce and our famous white & fire sauce with toasted pita.", "image": "/chicken-over-rice.jpg" },
       { "name": "Gyro Over Rice", "text": "Gyros, onions, green peppers, tomatoes, lettuce, white & fire sauce and toasted pita.", "image": "" },
-      { "name": "Shawarma Garden", "text": "Chicken or steak shawarma cut into pieces, with veggies, coleslaw, sauce and fries.", "image": "/img/shawarma-garden.jpg" },
-      { "name": "Shawarma Halabi", "text": "Chicken or steak with peppers, olives, pickles and melted cheese, served with veggies, coleslaw and fries.", "image": "/img/shawarma-halabi.jpg" },
-      { "name": "Shawarma Bashka", "text": "Peppers, olives, mushrooms, pickles, cheese, BBQ & garlic sauce, with veggies, coleslaw and fries.", "image": "/img/shawarma-plate.jpg" },
-      { "name": "SemSem Roll", "text": "Falafel, chicken or steak, rolled tight with pickles and house sauce.", "image": "/img/steak-wrap.jpg" },
-      { "name": "Vegetarian Plate", "text": "Hummus, baba ghanouj, two salads, 3 falafel, 2 grape leaves and two pitas.", "image": "/img/vegetarian-plate.jpg" },
+      { "name": "Shawarma Garden", "text": "Chicken or steak shawarma cut into pieces, with veggies, coleslaw, sauce and fries.", "image": "/shawarma-garden.jpg" },
+      { "name": "Shawarma Halabi", "text": "Chicken or steak with peppers, olives, pickles and melted cheese, served with veggies, coleslaw and fries.", "image": "/shawarma-halabi.jpg" },
+      { "name": "Shawarma Bashka", "text": "Peppers, olives, mushrooms, pickles, cheese, BBQ & garlic sauce, with veggies, coleslaw and fries.", "image": "/shawarma-plate.jpg" },
+      { "name": "SemSem Roll", "text": "Falafel, chicken or steak, rolled tight with pickles and house sauce.", "image": "/steak-wrap.jpg" },
+      { "name": "Vegetarian Plate", "text": "Hummus, baba ghanouj, two salads, 3 falafel, 2 grape leaves and two pitas.", "image": "/vegetarian-plate.jpg" },
       { "name": "Zinger Combo", "text": "Extra-crispy chicken filet, pickles, tomato, lettuce, cheese and spicy Zinger sauce with fries.", "image": "" }
     ],
     "mezze": [
-      { "name": "Hummus", "note": "Small · Large", "image": "/img/hummus.jpg" },
-      { "name": "Baba Ghanouj", "note": "Small · Large", "image": "/img/baba-ghanouj.jpg" },
+      { "name": "Hummus", "note": "Small · Large", "image": "/hummus.jpg" },
+      { "name": "Baba Ghanouj", "note": "Small · Large", "image": "/baba-ghanouj.jpg" },
       { "name": "Topped Hummus", "note": "With chicken or steak", "image": "" },
       { "name": "Falafel", "note": "Piece · Dozen", "image": "" },
       { "name": "Stuffed Falafel", "note": "Onions, sumac, sesame", "image": "" },
