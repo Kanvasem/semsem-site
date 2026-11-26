@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Semsem Mediterranean — Coming soon to Lakeview, Chicago</title>
+<meta name="description" content="Semsem Mediterranean is coming soon to 964 W Belmont Ave, Lakeview, Chicago. Now hiring.">
+<meta property="og:title" content="Semsem Mediterranean — Coming soon">
+<meta property="og:description" content="Coming soon to 964 W Belmont Ave, Lakeview, Chicago. Now hiring.">
+<meta property="og:image" content="https://semsemonbelmont.com/logo.png">
+<meta property="og:url" content="https://semsemonbelmont.com/">
+<meta name="theme-color" content="#F3EBDD">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Semsem Mediterranean","servesCuisine":"Mediterranean","url":"https://semsemonbelmont.com","address":{"@type":"PostalAddress","streetAddress":"964 W Belmont Ave","addressLocality":"Chicago","addressRegion":"IL","postalCode":"60657","addressCountry":"US"}}
+</script>
+<style>
+  :root{--brown:#5D3C17;--olive:#7C923B;--tan:#F3EBDD;--saffron:#E0A43A}
+  *{box-sizing:border-box;margin:0}
+  html,body{height:100%}
+  body{font-family:Inter,system-ui,sans-serif;background:var(--tan);color:var(--brown);
+       display:flex;align-items:center;justify-content:center;text-align:center;padding:32px 20px;
+       -webkit-font-smoothing:antialiased}
+  main{display:flex;flex-direction:column;align-items:center;gap:22px;max-width:520px}
+  .logo{width:min(260px,62vw);height:auto;filter:drop-shadow(0 6px 18px rgba(93,60,23,.12))}
+  h1{font-size:clamp(2.4rem,8vw,3.6rem);font-weight:800;letter-spacing:-.03em;line-height:1}
+  .tag{font-size:1.05rem;color:var(--olive);font-weight:500;margin-top:-8px}
+  .rule{width:40px;height:3px;background:var(--saffron);border-radius:2px}
+  address{font-style:normal;font-size:1rem;line-height:1.5}
+  address strong{font-weight:700;display:block}
+  address span{display:block}
+  .area{margin-top:10px;font-size:.78rem;font-weight:700;letter-spacing:.32em;text-transform:uppercase;color:var(--olive);padding-left:.32em}
+  .btn{display:inline-block;margin-top:6px;padding:15px 34px;border-radius:999px;background:var(--brown);
+       color:#fff;text-decoration:none;font-weight:700;font-size:1rem;transition:background .2s,transform .2s}
+  .btn:hover,.btn:focus-visible{background:var(--olive);transform:translateY(-1px)}
+  .btn:focus-visible{outline:3px solid var(--saffron);outline-offset:3px}
+</style>
+</head>
+<body>
+<main>
+  <img class="logo" src="/logo.png" alt="Semsem Mediterranean" width="260" height="263">
+  <h1 data-k="headline">Coming soon</h1>
+  <p class="tag" data-k="tagline">Fresh Mediterranean, made fast.</p>
+  <span class="rule" aria-hidden="true"></span>
+  <address><strong data-k="address">964 W Belmont Ave</strong><span data-k="city">Chicago, IL 60657</span><span class="area" data-k="area">Lakeview</span></address>
+  <a class="btn" data-k="button_label" href="https://tally.so/r/kbbRjd" target="_blank" rel="noopener">Work with us</a>
+</main>
+<script>
+fetch('/content.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).then(c=>{
+  if(!c)return;
+  document.querySelectorAll('[data-k]').forEach(el=>{const v=c[el.dataset.k];if(v)el.textContent=v});
+  if(c.button_url)document.querySelector('.btn').href=c.button_url;
+}).catch(()=>{});
+</script>
+</body>
+</html>
