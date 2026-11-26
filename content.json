@@ -1,9 +1,71 @@
 {
-  "headline": "Coming soon",
   "tagline": "Fresh Mediterranean, made fast.",
+  "intro": "Shawarma, falafel, bowls and wraps, built your way on Belmont Ave.",
   "address": "964 W Belmont Ave",
   "city": "Chicago, IL 60657",
   "area": "Lakeview",
-  "button_label": "Work with us",
-  "button_url": "https://tally.so/r/kbbRjd"
+  "phone": "",
+  "hours": [
+    { "days": "Every day", "time": "10am – 10pm" }
+  ],
+  "order": {
+    "pickup_label": "Order pickup",
+    "pickup_url": "",
+    "delivery": [
+      { "name": "DoorDash", "url": "" },
+      { "name": "Uber Eats", "url": "" },
+      { "name": "Grubhub", "url": "" }
+    ]
+  },
+  "catering": {
+    "title": "Catering for any crowd",
+    "text": "Shawarma platters, salads, dips, rice and grape leaves for offices, parties and game days. Tell us about your event and we'll put together the spread.",
+    "button_label": "Request catering",
+    "button_url": ""
+  },
+  "jobs": {
+    "title": "Work with us",
+    "text": "We're building the Belmont team. Join us.",
+    "button_label": "Apply now",
+    "button_url": "https://tally.so/r/kbbRjd"
+  },
+  "social": {
+    "instagram": "",
+    "tiktok": "",
+    "facebook": ""
+  },
+  "menu": {
+    "build": {
+      "bases": [
+        { "name": "Pita", "text": "Fresh pita, a protein, 3 toppings and a sauce.", "image": "/img/gyro-pita.jpg" },
+        { "name": "Wrap", "text": "Toasted wrap, a protein, 4 toppings and a sauce.", "image": "/img/chicken-wrap.jpg" },
+        { "name": "Bowl", "text": "Rice, hummus or lettuce, a protein, 5 toppings and a sauce.", "image": "/img/bowl.jpg" }
+      ],
+      "combo": "Make it a combo: add fries, rice or soup with a fountain drink.",
+      "proteins": ["Chicken Shawarma", "Steak Shawarma", "Grilled Chicken", "Gyros", "Falafel"],
+      "toppings": ["Hummus", "Baba ghanouj", "Jerusalem salad", "Arabic salad", "Tabouli", "Turkish salad", "Cucumber yogurt salad", "Purple cabbage salad", "Lettuce", "Tomatoes", "Cucumber", "Sumac onions", "Pickles", "Jalapeños", "Pita chips", "Chickpea salad", "Feta", "Black olives", "Banana peppers", "Pickled turnips", "Fried cauliflower", "Fried eggplant", "Fried potatoes"],
+      "sauces": ["Tahini", "Garlic", "White", "Fire"]
+    },
+    "signatures": [
+      { "name": "Chicken Over Rice", "text": "Grilled chicken, tomatoes, lettuce and our famous white & fire sauce with toasted pita.", "image": "/img/chicken-over-rice.jpg" },
+      { "name": "Gyro Over Rice", "text": "Gyros, onions, green peppers, tomatoes, lettuce, white & fire sauce and toasted pita.", "image": "" },
+      { "name": "Shawarma Garden", "text": "Chicken or steak shawarma cut into pieces, with veggies, coleslaw, sauce and fries.", "image": "/img/shawarma-garden.jpg" },
+      { "name": "Shawarma Halabi", "text": "Chicken or steak with peppers, olives, pickles and melted cheese, served with veggies, coleslaw and fries.", "image": "/img/shawarma-halabi.jpg" },
+      { "name": "Shawarma Bashka", "text": "Peppers, olives, mushrooms, pickles, cheese, BBQ & garlic sauce, with veggies, coleslaw and fries.", "image": "/img/shawarma-plate.jpg" },
+      { "name": "SemSem Roll", "text": "Falafel, chicken or steak, rolled tight with pickles and house sauce.", "image": "/img/steak-wrap.jpg" },
+      { "name": "Vegetarian Plate", "text": "Hummus, baba ghanouj, two salads, 3 falafel, 2 grape leaves and two pitas.", "image": "/img/vegetarian-plate.jpg" },
+      { "name": "Zinger Combo", "text": "Extra-crispy chicken filet, pickles, tomato, lettuce, cheese and spicy Zinger sauce with fries.", "image": "" }
+    ],
+    "mezze": [
+      { "name": "Hummus", "note": "Small · Large", "image": "/img/hummus.jpg" },
+      { "name": "Baba Ghanouj", "note": "Small · Large", "image": "/img/baba-ghanouj.jpg" },
+      { "name": "Topped Hummus", "note": "With chicken or steak", "image": "" },
+      { "name": "Falafel", "note": "Piece · Dozen", "image": "" },
+      { "name": "Stuffed Falafel", "note": "Onions, sumac, sesame", "image": "" },
+      { "name": "Shawarma Plate", "note": "Chicken or steak · Small · Large", "image": "" },
+      { "name": "Gyros Plate", "note": "With cucumber yogurt salad and fries", "image": "" }
+    ],
+    "sides": ["Lentil Soup", "Grape Leaves (6)", "Salad", "Rice", "Fries", "Baklava", "Extra Pita"],
+    "drinks": ["Fountain Drink", "Water", "Yogurt Drink", "Hot Tea"]
+  }
 }

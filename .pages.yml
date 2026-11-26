@@ -1,14 +1,97 @@
+media:
+  input: img
+  output: /img
 content:
   - name: site
-    label: Coming Soon page
+    label: Website content
     type: file
     path: content.json
     format: json
     fields:
-      - { name: headline, label: Headline, type: string }
-      - { name: tagline, label: Tagline, type: string }
+      - { name: tagline, label: Headline, type: string }
+      - { name: intro, label: Intro line, type: string }
       - { name: address, label: Street address, type: string }
       - { name: city, label: City / state / ZIP, type: string }
       - { name: area, label: Neighborhood, type: string }
-      - { name: button_label, label: Button text, type: string }
-      - { name: button_url, label: Button link, type: string }
+      - { name: phone, label: Phone, type: string }
+      - name: hours
+        label: Hours
+        type: object
+        list: true
+        fields:
+          - { name: days, label: Days, type: string }
+          - { name: time, label: Time, type: string }
+      - name: order
+        label: Ordering links
+        type: object
+        fields:
+          - { name: pickup_label, label: Pickup button text, type: string }
+          - { name: pickup_url, label: Pickup link (Clover), type: string }
+          - name: delivery
+            label: Delivery apps
+            type: object
+            list: true
+            fields:
+              - { name: name, label: App name, type: string }
+              - { name: url, label: Link, type: string }
+      - name: catering
+        label: Catering
+        type: object
+        fields:
+          - { name: title, label: Title, type: string }
+          - { name: text, label: Text, type: text }
+          - { name: button_label, label: Button text, type: string }
+          - { name: button_url, label: Button link, type: string }
+      - name: jobs
+        label: Work with us
+        type: object
+        fields:
+          - { name: title, label: Title, type: string }
+          - { name: text, label: Text, type: string }
+          - { name: button_label, label: Button text, type: string }
+          - { name: button_url, label: Button link, type: string }
+      - name: social
+        label: Social links
+        type: object
+        fields:
+          - { name: instagram, label: Instagram URL, type: string }
+          - { name: tiktok, label: TikTok URL, type: string }
+          - { name: facebook, label: Facebook URL, type: string }
+      - name: menu
+        label: Menu
+        type: object
+        fields:
+          - name: build
+            label: Build your own
+            type: object
+            fields:
+              - name: bases
+                label: Bases
+                type: object
+                list: true
+                fields:
+                  - { name: name, label: Name, type: string }
+                  - { name: text, label: Description, type: string }
+                  - { name: image, label: Photo, type: image }
+              - { name: combo, label: Combo note, type: string }
+              - { name: proteins, label: Proteins, type: string, list: true }
+              - { name: toppings, label: Toppings, type: string, list: true }
+              - { name: sauces, label: Sauces, type: string, list: true }
+          - name: signatures
+            label: Signatures
+            type: object
+            list: true
+            fields:
+              - { name: name, label: Name, type: string }
+              - { name: text, label: Description, type: text }
+              - { name: image, label: Photo, type: image }
+          - name: mezze
+            label: Mezze & plates
+            type: object
+            list: true
+            fields:
+              - { name: name, label: Name, type: string }
+              - { name: note, label: Note, type: string }
+              - { name: image, label: Photo, type: image }
+          - { name: sides, label: Sides & extras, type: string, list: true }
+          - { name: drinks, label: Drinks, type: string, list: true }

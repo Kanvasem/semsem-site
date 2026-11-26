@@ -3,58 +3,334 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Semsem Mediterranean — Coming soon to Lakeview, Chicago</title>
-<meta name="description" content="Semsem Mediterranean is coming soon to 964 W Belmont Ave, Lakeview, Chicago. Now hiring.">
-<meta property="og:title" content="Semsem Mediterranean — Coming soon">
-<meta property="og:description" content="Coming soon to 964 W Belmont Ave, Lakeview, Chicago. Now hiring.">
-<meta property="og:image" content="https://semsemonbelmont.com/logo.png">
+<title>Semsem Mediterranean | Shawarma, Falafel & Bowls in Lakeview, Chicago</title>
+<meta name="description" content="Fresh Mediterranean, made fast. Shawarma, falafel, bowls and wraps at 964 W Belmont Ave, Lakeview, Chicago. Order pickup, delivery or catering.">
+<meta property="og:title" content="Semsem Mediterranean, Lakeview Chicago">
+<meta property="og:description" content="Shawarma, falafel, bowls and wraps on Belmont Ave.">
+<meta property="og:image" content="https://semsemonbelmont.com/img/shawarma-garden.jpg">
 <meta property="og:url" content="https://semsemonbelmont.com/">
 <meta name="theme-color" content="#F3EBDD">
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Restaurant","name":"Semsem Mediterranean","servesCuisine":"Mediterranean","url":"https://semsemonbelmont.com","address":{"@type":"PostalAddress","streetAddress":"964 W Belmont Ave","addressLocality":"Chicago","addressRegion":"IL","postalCode":"60657","addressCountry":"US"}}
+{"@context":"https://schema.org","@type":"Restaurant","name":"Semsem Mediterranean","servesCuisine":["Mediterranean","Middle Eastern"],"url":"https://semsemonbelmont.com","image":"https://semsemonbelmont.com/img/shawarma-garden.jpg","priceRange":"$","address":{"@type":"PostalAddress","streetAddress":"964 W Belmont Ave","addressLocality":"Chicago","addressRegion":"IL","postalCode":"60657","addressCountry":"US"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"10:00","closes":"22:00"}],"hasMenu":"https://semsemonbelmont.com/#menu"}
 </script>
 <style>
-  :root{--brown:#5D3C17;--olive:#7C923B;--tan:#F3EBDD;--saffron:#E0A43A}
-  *{box-sizing:border-box;margin:0}
-  html,body{height:100%}
-  body{font-family:Inter,system-ui,sans-serif;background:var(--tan);color:var(--brown);
-       display:flex;align-items:center;justify-content:center;text-align:center;padding:32px 20px;
-       -webkit-font-smoothing:antialiased}
-  main{display:flex;flex-direction:column;align-items:center;gap:22px;max-width:520px}
-  .logo{width:min(260px,62vw);height:auto;filter:drop-shadow(0 6px 18px rgba(93,60,23,.12))}
-  h1{font-size:clamp(2.4rem,8vw,3.6rem);font-weight:800;letter-spacing:-.03em;line-height:1}
-  .tag{font-size:1.05rem;color:var(--olive);font-weight:500;margin-top:-8px}
-  .rule{width:40px;height:3px;background:var(--saffron);border-radius:2px}
-  address{font-style:normal;font-size:1rem;line-height:1.5}
-  address strong{font-weight:700;display:block}
-  address span{display:block}
-  .area{margin-top:10px;font-size:.78rem;font-weight:700;letter-spacing:.32em;text-transform:uppercase;color:var(--olive);padding-left:.32em}
-  .btn{display:inline-block;margin-top:6px;padding:15px 34px;border-radius:999px;background:var(--brown);
-       color:#fff;text-decoration:none;font-weight:700;font-size:1rem;transition:background .2s,transform .2s}
-  .btn:hover,.btn:focus-visible{background:var(--olive);transform:translateY(-1px)}
-  .btn:focus-visible{outline:3px solid var(--saffron);outline-offset:3px}
+:root{--brown:#5D3C17;--olive:#7C923B;--tan:#F3EBDD;--cream:#FBF7F0;--saffron:#E0A43A;--ink:#3B2610;--line:rgba(93,60,23,.14);--r:18px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:Inter,system-ui,sans-serif;background:var(--cream);color:var(--ink);-webkit-font-smoothing:antialiased;line-height:1.5}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+.eyebrow{font-size:.75rem;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--olive)}
+h2{font-size:clamp(2rem,5vw,3.2rem);font-weight:900;text-transform:uppercase;letter-spacing:-.02em;line-height:.98;color:var(--brown);margin:.35em 0 .4em}
+h3{font-weight:700;color:var(--brown);letter-spacing:-.01em}
+.lead{font-size:1.08rem;color:#6b5a45;max-width:560px}
+section{padding:88px 0}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:999px;font-weight:700;font-size:.98rem;text-decoration:none;border:2px solid transparent;transition:transform .2s,background .2s,color .2s;cursor:pointer}
+.btn:hover{transform:translateY(-1px)}
+.btn-dark{background:var(--brown);color:#fff}.btn-dark:hover{background:var(--olive)}
+.btn-light{background:#fff;color:var(--brown)}.btn-light:hover{background:var(--tan)}
+.btn-line{border-color:var(--brown);color:var(--brown)}.btn-line:hover{background:var(--brown);color:#fff}
+.btn-saffron{background:var(--saffron);color:var(--ink)}.btn-saffron:hover{background:#eab354}
+.btn.soon{opacity:.5;pointer-events:none}
+.btn .tag{font-size:.68rem;font-weight:600;opacity:.8;letter-spacing:.04em}
+:focus-visible{outline:3px solid var(--saffron);outline-offset:3px}
+
+/* announcement */
+.announce{background:var(--olive);color:#fff;text-align:center;font-size:.85rem;font-weight:700;letter-spacing:.02em;padding:9px 16px;position:relative;z-index:31}
+.announce a{color:#fff;margin-left:8px}
+
+/* floating pill nav */
+header{position:sticky;top:0;z-index:30;padding:0 22px;height:0;overflow:visible}
+.nav{max-width:1160px;margin:0 auto;position:relative;top:14px;display:flex;align-items:center;justify-content:space-between;gap:20px;height:60px;padding:0 10px 0 18px;border-radius:999px;background:rgba(251,247,240,.86);backdrop-filter:blur(14px);box-shadow:0 6px 24px rgba(59,38,16,.12)}
+.nav .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:900;color:var(--brown);letter-spacing:-.01em;text-transform:uppercase;font-size:1.05rem}
+.nav .brand img{width:38px;height:38px}
+.nav ul{display:flex;gap:26px;list-style:none;font-weight:600;font-size:.95rem;margin-right:auto;margin-left:14px}
+.nav ul a{text-decoration:none;color:var(--brown)}.nav ul a:hover{color:var(--olive)}
+.nav .btn{padding:11px 24px;font-size:.92rem}
+@media(max-width:760px){.nav ul{display:none}header{padding:0 12px}.nav{top:10px}}
+
+/* hero */
+.hero{position:relative;height:min(92vh,860px);min-height:560px;padding:0;overflow:hidden;background:#eee}
+.hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero .wrap{position:relative;z-index:1;height:100%;display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:64px}
+.hl{display:flex;flex-direction:column;align-items:flex-start}
+.hl h1{font-size:clamp(2.6rem,7vw,5.4rem);font-weight:900;text-transform:uppercase;letter-spacing:-.02em;line-height:.92;color:var(--brown)}
+.hl h1 span{display:inline-block;background:var(--cream);padding:.08em .16em .02em;box-decoration-break:clone}
+.hl p{display:inline-block;background:var(--saffron);color:var(--ink);font-weight:600;font-size:clamp(1rem,1.6vw,1.2rem);padding:8px 14px;margin-top:0}
+.hl .ctas{display:flex;gap:12px;margin-top:20px;flex-wrap:wrap}
+.btn-saffron{box-shadow:0 4px 0 rgba(59,38,16,.25)}
+.hero .badge{position:absolute;right:max(22px,calc((100vw - 1160px)/2 + 22px));top:120px;z-index:1;width:150px;height:150px;border-radius:50%;background:var(--saffron);color:var(--ink);display:grid;place-items:center;text-align:center;font-weight:900;text-transform:uppercase;line-height:1;font-size:1.15rem;transform:rotate(-8deg);box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.hero .badge small{display:block;font-size:.62rem;letter-spacing:.14em;margin-top:6px;font-weight:700}
+@media(max-width:760px){.hero{height:auto;min-height:0}.hero picture{position:relative;display:block;aspect-ratio:1/1.08}.hero picture img{position:absolute}.hero{background:var(--cream)}.hero .wrap{padding:0 22px 32px;margin-top:-190px}.hl .ctas{margin-top:22px}.hero .badge{width:104px;height:104px;font-size:.82rem;top:84px;right:14px}}
+
+/* marquee */
+.ticker{background:var(--brown);color:var(--cream);overflow:hidden;white-space:nowrap;padding:14px 0;font-weight:800;text-transform:uppercase;letter-spacing:.04em;font-size:.95rem}
+.ticker .track{display:inline-block;animation:tick 38s linear infinite}
+.ticker span{margin:0 18px}.ticker i{color:var(--saffron);font-style:normal}
+@keyframes tick{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.ticker .track{animation:none}}
+
+/* how it works */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+.step{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.step b{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--olive);color:#fff;font-size:.9rem;margin-bottom:14px}
+.step p{color:#6b5a45;font-size:.95rem;margin-top:6px}
+
+.bases{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:22px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.card .ph{aspect-ratio:4/3;background:var(--tan);position:relative;overflow:hidden;display:grid;place-items:center}
+.card .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.card .ph img.mark{position:static;width:34%;height:auto;opacity:.4}
+.card .body{padding:20px 22px 24px}
+.card p{color:#6b5a45;font-size:.93rem;margin-top:6px}
+.combo{margin-top:18px;background:var(--tan);border-radius:var(--r);padding:16px 22px;font-weight:600;color:var(--brown);font-size:.95rem}
+.combo::before{content:"+ ";color:var(--saffron);font-weight:800}
+
+.picks{display:grid;grid-template-columns:1fr 2fr 1fr;gap:18px;margin-top:18px}
+.pick{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:22px}
+.pick h3{font-size:1rem;margin-bottom:12px}
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.chip{font-size:.84rem;font-weight:500;padding:6px 12px;border-radius:999px;background:var(--cream);border:1px solid var(--line)}
+.pick.sauce .chip{background:var(--brown);color:#fff;border-color:var(--brown)}
+
+.sub{margin-top:72px;display:flex;align-items:end;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.sub h3{font-size:1.7rem;font-weight:900;text-transform:uppercase;letter-spacing:-.01em}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:22px}
+.mezze{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px;margin-top:22px}
+.mz{background:#fff;border:1px solid var(--line);border-radius:14px;display:flex;align-items:center;gap:14px;padding:12px 16px;min-height:86px}
+.mz img,.mz .dot{width:62px;height:62px;border-radius:10px;object-fit:cover;flex:none;background:var(--tan)}
+.mz b{display:block;color:var(--brown);font-size:.95rem}
+.mz span{font-size:.8rem;color:#6b5a45}
+.lists{display:grid;grid-template-columns:1.4fr 1fr;gap:18px;margin-top:40px}
+.mlist{list-style:none;columns:2;column-gap:28px}
+.mlist li{break-inside:avoid;padding:9px 0;border-bottom:1px dashed var(--line);font-weight:500;color:var(--brown)}
+@media(max-width:560px){.mlist{columns:1}}
+.note{margin-top:28px;font-size:.85rem;color:#8a7a66}
+
+/* order */
+.order{background:var(--brown);color:#fff}
+.order h2,.order .eyebrow{color:#fff}.order .eyebrow{color:var(--saffron)}
+.order .lead{color:rgba(255,255,255,.8)}
+.order-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:28px;margin-top:36px}
+.opt{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:var(--r);padding:28px}
+.opt h3{color:#fff;font-size:1.2rem}
+.opt p{color:rgba(255,255,255,.75);margin:6px 0 20px;font-size:.95rem}
+.dl{display:flex;flex-wrap:wrap;gap:10px}
+
+/* catering */
+.cater{display:grid;grid-template-columns:1fr 1.15fr;gap:48px;align-items:center}
+.cater .imgs{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.cater .imgs img{border-radius:var(--r);aspect-ratio:1;object-fit:cover;width:100%}
+.cater .imgs img:first-child{grid-column:1/-1;aspect-ratio:16/9}
+.cater .btn{margin-top:26px}
+
+/* visit */
+.visit{background:var(--tan)}
+.visit-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:28px;margin-top:36px}
+.info{background:#fff;border-radius:var(--r);padding:30px;display:flex;flex-direction:column;gap:22px}
+.info h3{font-size:.78rem;letter-spacing:.24em;text-transform:uppercase;color:var(--olive);margin-bottom:6px}
+.info .big{font-size:1.25rem;font-weight:700;color:var(--brown)}
+.hrs div{display:flex;justify-content:space-between;gap:16px;padding:4px 0;border-bottom:1px dashed var(--line)}
+.hrs div:last-child{border:0}
+.map{border-radius:var(--r);overflow:hidden;min-height:380px;background:#e8dfd0}
+.map iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+
+/* jobs */
+.jobs{background:var(--olive);color:#fff;padding:56px 0}
+.jobs .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.jobs h2{color:#fff;margin:0 0 4px;font-size:clamp(1.7rem,4vw,2.4rem)}
+.jobs p{opacity:.9}
+
+footer{background:var(--ink);color:rgba(255,255,255,.7);padding:44px 0;font-size:.88rem}
+footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
+footer .brand{display:flex;align-items:center;gap:12px;color:#fff;font-weight:700}
+footer .brand img{width:46px}
+footer .soc{display:flex;gap:16px}
+footer .soc a{color:#fff;text-decoration:none;font-weight:600}
+
+@media(max-width:900px){
+  .steps,.bases{grid-template-columns:1fr}
+  .bases{grid-template-columns:1fr 1fr}
+  .picks,.lists,.order-grid,.cater,.visit-grid{grid-template-columns:1fr}
+  .grid4{grid-template-columns:1fr 1fr}
+  section{padding:68px 0}
+}
+@media(max-width:560px){.bases,.grid4{grid-template-columns:1fr}.steps{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-<main>
-  <img class="logo" src="/logo.png" alt="Semsem Mediterranean" width="260" height="263">
-  <h1 data-k="headline">Coming soon</h1>
-  <p class="tag" data-k="tagline">Fresh Mediterranean, made fast.</p>
-  <span class="rule" aria-hidden="true"></span>
-  <address><strong data-k="address">964 W Belmont Ave</strong><span data-k="city">Chicago, IL 60657</span><span class="area" data-k="area">Lakeview</span></address>
-  <a class="btn" data-k="button_label" href="https://tally.so/r/kbbRjd" target="_blank" rel="noopener">Work with us</a>
+<div class="announce">Now hiring on Belmont <a id="ann-link" href="https://tally.so/r/kbbRjd" target="_blank" rel="noopener">Apply →</a></div>
+<header>
+  <nav class="nav">
+    <a class="brand" href="#top"><img src="/logo.png" alt="">Semsem</a>
+    <ul>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#catering">Catering</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+    <a class="btn btn-saffron" href="#order">Order</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero" aria-label="Welcome">
+    <picture>
+      <source media="(max-width:760px)" srcset="/img/hero-bowl-m.jpg">
+      <img src="/img/hero-bowl.jpg" alt="Semsem bowl with chicken and beef shawarma, rice, tabouli, cabbage and tomatoes">
+    </picture>
+    <div class="badge"><div>Now on<br>Belmont<small>Lakeview</small></div></div>
+    <div class="wrap">
+      <div class="hl">
+        <h1><span>Shawarma,</span><br><span>built your way.</span></h1>
+        <p data-k="tagline">Fresh Mediterranean, made fast.</p>
+        <div class="ctas">
+          <a class="btn btn-saffron" href="#order">Order now</a>
+          <a class="btn btn-light" href="#menu">See the menu</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ticker" aria-hidden="true"><div class="track" id="ticker"></div></div>
+
+  <section id="menu">
+    <div class="wrap">
+      <div class="eyebrow">Our menu</div>
+      <h2>The menu.</h2>
+      <p class="lead">Pick a base, add your favorite protein, then finish it fresh with toppings and sauce.</p>
+      <div class="steps">
+        <div class="step"><b>1</b><h3>Pick your base</h3><p>Pita, wrap or bowl.</p></div>
+        <div class="step"><b>2</b><h3>Add a protein</h3><p>Shawarma, grilled chicken, gyros or falafel.</p></div>
+        <div class="step"><b>3</b><h3>Finish it fresh</h3><p>Salads, dips, pickles and a house sauce.</p></div>
+      </div>
+      <div class="bases" id="bases"></div>
+      <div class="combo" id="combo"></div>
+      <div class="picks">
+        <div class="pick"><h3>Proteins</h3><div class="chips" id="proteins"></div></div>
+        <div class="pick"><h3>Toppings</h3><div class="chips" id="toppings"></div></div>
+        <div class="pick sauce"><h3>Sauces</h3><div class="chips" id="sauces"></div></div>
+      </div>
+
+      <div class="sub"><div><div class="eyebrow">House favorites</div><h3>Semsem signatures</h3></div></div>
+      <div class="grid4" id="signatures"></div>
+
+      <div class="sub"><div><div class="eyebrow">To share</div><h3>Mezze & plates</h3></div></div>
+      <div class="mezze" id="mezze"></div>
+
+      <div class="lists">
+        <div class="pick"><h3>Sides & extras</h3><ul class="mlist" id="sides"></ul></div>
+        <div class="pick"><h3>Drinks</h3><ul class="mlist" id="drinks"></ul></div>
+      </div>
+      <p class="note">Prices and full details are shown when you order.</p>
+    </div>
+  </section>
+
+  <section class="order" id="order">
+    <div class="wrap">
+      <div class="eyebrow">Order</div>
+      <h2>Hungry? We've got you.</h2>
+      <p class="lead">Skip the line with pickup, or get it delivered across Lakeview.</p>
+      <div class="order-grid">
+        <div class="opt">
+          <h3>Pickup</h3>
+          <p>Order ahead and grab it at the counter.</p>
+          <a class="btn btn-saffron" id="pickup" href="#">Order pickup</a>
+        </div>
+        <div class="opt">
+          <h3>Delivery</h3>
+          <p>Find us on your favorite app.</p>
+          <div class="dl" id="delivery"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="catering">
+    <div class="wrap cater">
+      <div>
+        <div class="eyebrow">Catering</div>
+        <h2 data-k="catering.title">Catering for any crowd</h2>
+        <p class="lead" data-k="catering.text"></p>
+        <a class="btn btn-dark" id="cater-btn" href="#">Request catering</a>
+      </div>
+      <div class="imgs">
+        <img src="/img/catering-platter.jpg" alt="Semsem shawarma catering platter with fries" loading="lazy">
+        <img src="/img/catering-trays.jpg" alt="Catering trays of salads, grape leaves and rice" loading="lazy">
+        <img src="/img/vegetarian-plate.jpg" alt="Falafel, hummus, baba ghanouj and tabouli" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section class="visit" id="visit">
+    <div class="wrap">
+      <div class="eyebrow">Visit</div>
+      <h2>Find us on Belmont.</h2>
+      <div class="visit-grid">
+        <div class="info">
+          <div><h3>Address</h3><div class="big" data-k="address">964 W Belmont Ave</div><div data-k="city">Chicago, IL 60657</div></div>
+          <div><h3>Hours</h3><div class="hrs" id="hours"></div></div>
+          <div id="phone-wrap" hidden><h3>Phone</h3><a class="big" id="phone" href="#"></a></div>
+          <a class="btn btn-line" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=964+W+Belmont+Ave,+Chicago,+IL+60657">Get directions</a>
+        </div>
+        <div class="map"><iframe title="Map to Semsem, 964 W Belmont Ave" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=964+W+Belmont+Ave,+Chicago,+IL+60657&output=embed"></iframe></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="jobs">
+    <div class="wrap">
+      <div><h2 data-k="jobs.title">Work with us</h2><p data-k="jobs.text">We're building the Belmont team. Join us.</p></div>
+      <a class="btn btn-light" id="jobs-btn" href="https://tally.so/r/kbbRjd" target="_blank" rel="noopener">Apply now</a>
+    </div>
+  </section>
 </main>
+
+<footer>
+  <div class="wrap">
+    <div class="brand"><img src="/logo.png" alt=""><div>Semsem Mediterranean<br><span style="font-weight:400;opacity:.7">964 W Belmont Ave · Chicago, IL 60657</span></div></div>
+    <div class="soc" id="social"></div>
+    <div>© <span id="yr"></span> Semsem Mediterranean</div>
+  </div>
+</footer>
+
 <script>
-fetch('/content.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).then(c=>{
-  if(!c)return;
-  document.querySelectorAll('[data-k]').forEach(el=>{const v=c[el.dataset.k];if(v)el.textContent=v});
-  if(c.button_url)document.querySelector('.btn').href=c.button_url;
-}).catch(()=>{});
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const get=(o,p)=>p.split('.').reduce((a,k)=>a?.[k],o);
+function link(el,url,label){
+  if(label)el.textContent=label;
+  if(url){el.href=url;el.target='_blank';el.rel='noopener';el.classList.remove('soon')}
+  else{el.removeAttribute('href');el.classList.add('soon');el.insertAdjacentHTML('beforeend',' <span class="tag">Coming soon</span>')}
+}
+const ph=img=>img?`<img src="${esc(img)}" alt="" loading="lazy">`:`<img class="mark" src="/logo.png" alt="">`;
+$('#yr').textContent=new Date().getFullYear();
+const tk=['Chicken shawarma','Steak shawarma','Falafel','Hummus','Bowls','Wraps','Open daily 10am–10pm','964 W Belmont Ave'];
+const one=tk.map(t=>`<span>${t}</span><i>✦</i>`).join('');$('#ticker').innerHTML=one+one+one+one;
+
+fetch('/content.json',{cache:'no-store'}).then(r=>r.json()).then(c=>{
+  document.querySelectorAll('[data-k]').forEach(el=>{const v=get(c,el.dataset.k);if(v)el.textContent=v});
+  const m=c.menu,b=m.build;
+  $('#bases').innerHTML=b.bases.map(x=>`<div class="card"><div class="ph">${ph(x.image)}</div><div class="body"><h3>${esc(x.name)}</h3><p>${esc(x.text)}</p></div></div>`).join('');
+  $('#combo').textContent=b.combo;
+  const chips=(id,a)=>$(id).innerHTML=a.map(x=>`<span class="chip">${esc(x)}</span>`).join('');
+  chips('#proteins',b.proteins);chips('#toppings',b.toppings);chips('#sauces',b.sauces);const list=(id,a)=>$(id).innerHTML=a.map(x=>`<li>${esc(x)}</li>`).join('');list('#sides',m.sides);list('#drinks',m.drinks);
+  $('#signatures').innerHTML=m.signatures.map(x=>`<div class="card"><div class="ph">${ph(x.image)}</div><div class="body"><h3>${esc(x.name)}</h3><p>${esc(x.text)}</p></div></div>`).join('');
+  $('#mezze').innerHTML=m.mezze.map(x=>`<div class="mz">${x.image?`<img src="${esc(x.image)}" alt="" loading="lazy">`:''}<div><b>${esc(x.name)}</b><span>${esc(x.note)}</span></div></div>`).join('');
+  $('#hours').innerHTML=c.hours.map(h=>`<div><span>${esc(h.days)}</span><b>${esc(h.time)}</b></div>`).join('');
+  if(c.phone){$('#phone-wrap').hidden=false;$('#phone').textContent=c.phone;$('#phone').href='tel:'+c.phone.replace(/\D/g,'')}
+  link($('#pickup'),c.order.pickup_url,c.order.pickup_label);
+  $('#delivery').innerHTML='';
+  c.order.delivery.forEach(d=>{const a=document.createElement('a');a.className='btn btn-light';$('#delivery').append(a);link(a,d.url,d.name)});
+  link($('#cater-btn'),c.catering.button_url,c.catering.button_label);
+  link($('#jobs-btn'),c.jobs.button_url,c.jobs.button_label);
+  const s=c.social||{};$('#social').innerHTML=Object.entries(s).filter(([,u])=>u).map(([k,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener">${k[0].toUpperCase()+k.slice(1)}</a>`).join('');
+});
 </script>
 </body>
 </html>
