@@ -63,7 +63,6 @@
           "image": "/bowl.jpg"
         }
       ],
-      "combo": "Make it a combo: add fries, rice or soup + a fountain drink.",
       "proteins": [
         {
           "name": "Chicken Shawarma",
@@ -172,7 +171,8 @@
         "Pita chips",
         "Fried cauliflower",
         "Fried eggplant"
-      ]
+      ],
+      "combo_sub": "Add fries, rice or soup + a fountain drink."
     },
     "signatures": [
       {

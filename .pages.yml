@@ -80,7 +80,7 @@ content:
                   - { name: name, label: Name, type: string }
                   - { name: text, label: Description, type: string }
                   - { name: image, label: Photo, type: image }
-              - { name: combo, label: Combo note, type: string }
+              - { name: combo_sub, label: Combo line, type: string }
               - name: proteins
                 label: Step 2 · Proteins
                 type: object
