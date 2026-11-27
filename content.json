@@ -17,15 +17,13 @@
     "delivery": [
       {
         "name": "DoorDash",
-        "url": ""
+        "url": "",
+        "logo": ""
       },
       {
         "name": "Uber Eats",
-        "url": ""
-      },
-      {
-        "name": "Grubhub",
-        "url": ""
+        "url": "",
+        "logo": ""
       }
     ]
   },

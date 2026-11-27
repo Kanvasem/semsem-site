@@ -1,9 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SemSem Mediterranean | Shawarma, Falafel & Bowls in Lakeview, Chicago</title>
+<title>SemSem Mediterranean | Shawarma, Falafel &amp; Bowls in Lakeview, Chicago</title>
 <meta name="description" content="Fresh Mediterranean, made fast. Shawarma, falafel, bowls and wraps at 964 W Belmont Ave, Lakeview, Chicago. Order pickup, delivery or catering.">
 <meta property="og:title" content="SemSem Mediterranean, Lakeview Chicago">
 <meta property="og:description" content="Shawarma, falafel, bowls and wraps on Belmont Ave.">
@@ -13,8 +11,8 @@
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Restaurant","name":"SemSem Mediterranean","servesCuisine":["Mediterranean","Middle Eastern"],"url":"https://semsemonbelmont.com","image":"https://semsemonbelmont.com/shawarma-garden.jpg","priceRange":"$","address":{"@type":"PostalAddress","streetAddress":"964 W Belmont Ave","addressLocality":"Chicago","addressRegion":"IL","postalCode":"60657","addressCountry":"US"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"11:00","closes":"22:00"}],"hasMenu":"https://semsemonbelmont.com/#menu"}
 </script>
@@ -77,14 +75,11 @@ header{position:sticky;top:0;z-index:30;padding:0 22px;height:0;overflow:visible
 @media(max-width:760px){.hero{height:auto;min-height:0}.hero picture{position:relative;display:block;aspect-ratio:1/1.08}.hero picture img{position:absolute}.hero{background:var(--cream)}.hero .wrap{padding:0 22px 32px;margin-top:-190px}.hl .ctas{margin-top:22px}.hero .badge{width:108px;height:108px;top:90px;right:18px}.hero .badge .t2{font-size:1.02rem}.hero .badge .t1,.hero .badge .t3{font-size:.5rem;letter-spacing:.16em}.hero .badge::before{inset:6px}}
 
 /* marquee */
-.ticker{position:relative;z-index:2;background:var(--brown);color:var(--cream);white-space:nowrap;padding:16px 0;margin:0 0 12px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;font-size:.95rem}
+.ticker{position:relative;z-index:2;background:var(--brown);color:var(--cream);white-space:nowrap;padding:16px 0;margin:0;font-weight:800;text-transform:uppercase;letter-spacing:.04em;font-size:.95rem}
 .ticker .track{display:inline-block;animation:tick 38s linear infinite}
 .ticker span{margin:0 18px}.ticker i{color:var(--saffron);font-style:normal}
 
 .ticker .track{will-change:transform}
-.ticker::before,.ticker::after{content:"";position:absolute;left:0;right:0;height:12px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='12' viewBox='0 0 40 12'%3E%3Cpath d='M0 6 Q10 0 20 6 T40 6 V12 H0Z' fill='%235D3C17'/%3E%3C/svg%3E") repeat-x;background-size:40px 12px}
-.ticker::before{top:-11px}
-.ticker::after{bottom:-11px;transform:scaleY(-1)}
 .ticker-clip{overflow:hidden}
 @keyframes tick{to{transform:translateX(-50%)}}
 @media(prefers-reduced-motion:reduce){.ticker .track{animation:none}}
@@ -126,6 +121,7 @@ header{position:sticky;top:0;z-index:30;padding:0 22px;height:0;overflow:visible
 @media(max-width:560px){.mlist{columns:1}}
 .note{margin-top:28px;font-size:.85rem;color:#8a7a66}
 
+.nm{text-transform:none!important}
 /* build flow */
 .flow{margin-top:40px;position:relative}
 .fstep{position:relative;padding:0 0 44px 64px}
@@ -135,24 +131,22 @@ header{position:sticky;top:0;z-index:30;padding:0 22px;height:0;overflow:visible
 .fhead h3{font-size:1.35rem;font-weight:900;text-transform:uppercase;letter-spacing:-.01em}
 .fhead p{color:#6b5a45;font-size:.92rem}
 .bases{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.tiles{display:grid;gap:14px}
+.tiles{display:grid;gap:28px 22px}
 .tiles.prot{grid-template-columns:repeat(5,1fr)}
 .tiles.top{grid-template-columns:repeat(7,1fr)}
 .tile{text-align:center}
-.tile .im{aspect-ratio:1;border-radius:50%;overflow:hidden;background:var(--tan);box-shadow:0 0 0 3px #fff,0 6px 16px rgba(59,38,16,.12);transition:transform .25s}
-.tile:hover .im{transform:scale(1.05) rotate(-2deg)}
-.tile .im img{width:100%;height:100%;object-fit:cover}
-.tile span{display:block;margin-top:10px;font-weight:700;font-size:.88rem;color:var(--brown);line-height:1.2}
-.tiles.top .tile .im{border-radius:18px}
-.tiles.top .tile span{font-size:.8rem;font-weight:600}
+.tile .im{aspect-ratio:1;border-radius:50%;overflow:hidden;background:#fff;border:9px solid #fff;box-shadow:0 0 0 1px #ECE5D8,0 12px 22px -8px rgba(59,38,16,.28),inset 0 0 0 1px rgba(0,0,0,.04);transition:transform .3s}
+.tile:hover .im{transform:translateY(-4px) rotate(-3deg)}
+.tile .im img{width:100%;height:100%;object-fit:cover;border-radius:50%;transform:scale(1.04)}
+.tile span{display:block;margin-top:14px;font-weight:700;font-size:.92rem;color:var(--brown);line-height:1.25}
 .more{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:18px}
 .more>span{font-weight:700;font-size:.85rem;color:var(--olive);text-transform:uppercase;letter-spacing:.12em}
-.sauces{display:flex;gap:26px;flex-wrap:wrap}
-.sauce{display:flex;flex-direction:column;align-items:center;gap:10px;font-weight:700;color:var(--brown);font-size:.9rem}
-.sauce i{width:78px;height:78px;border-radius:50% 50% 50% 50%/58% 58% 42% 42%;box-shadow:inset -6px -8px 0 rgba(0,0,0,.07),inset 6px 6px 0 rgba(255,255,255,.35),0 0 0 3px #fff,0 6px 16px rgba(59,38,16,.14)}
+.sauces{display:grid;grid-template-columns:repeat(4,minmax(0,150px));gap:22px}
+.sauce{text-align:center;font-weight:700;color:var(--brown);font-size:.92rem}
+.sauce svg{width:100%;height:auto;display:block;margin-bottom:12px;filter:drop-shadow(0 12px 14px rgba(59,38,16,.22))}
 .flow .combo{margin:0 0 0 64px}
 @media(max-width:900px){.tiles.prot{grid-template-columns:repeat(5,1fr)}.tiles.top{grid-template-columns:repeat(4,1fr)}}
-@media(max-width:560px){.flow .bases{grid-template-columns:repeat(3,1fr)}.sauces{gap:14px;justify-content:space-between}.sauce i{width:60px;height:60px}.fstep{padding-left:0}.fstep::before{display:none}.fhead{margin-left:0}.flow .combo{margin:0}.flow .bases{gap:10px}.bases .card .body{padding:10px 12px}.bases .card h3{font-size:.95rem}.bases .card p{display:none}.tiles.prot{grid-template-columns:repeat(3,1fr)}.tiles.top{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:560px){.flow .bases{grid-template-columns:repeat(3,1fr)}.sauces{grid-template-columns:repeat(4,1fr);gap:12px}.sauce{font-size:.8rem}.fstep{padding-left:0}.fstep::before{display:none}.fhead{margin-left:0}.flow .combo{margin:0}.flow .bases{gap:10px}.bases .card .body{padding:10px 12px}.bases .card h3{font-size:.95rem}.bases .card p{display:none}.tiles.prot{grid-template-columns:repeat(3,1fr)}.tiles.top{grid-template-columns:repeat(3,1fr)}}
 /* order */
 .order{background:var(--brown);color:#fff}
 .order h2,.order .eyebrow{color:#fff}.order .eyebrow{color:var(--saffron)}
@@ -163,6 +157,7 @@ header{position:sticky;top:0;z-index:30;padding:0 22px;height:0;overflow:visible
 .opt p{color:rgba(255,255,255,.75);margin:6px 0 20px;font-size:.95rem}
 .dl{display:flex;flex-wrap:wrap;gap:10px}
 
+.dlv{min-height:54px;padding:10px 24px}.dlv img{height:22px;width:auto}
 /* catering */
 .cater{display:grid;grid-template-columns:1fr 1.15fr;gap:48px;align-items:center}
 .cater .imgs{display:grid;grid-template-columns:1fr 1fr;gap:14px}
@@ -195,13 +190,17 @@ header{position:sticky;top:0;z-index:30;padding:0 22px;height:0;overflow:visible
 .jobs h2{color:#fff;margin:0 0 4px;font-size:clamp(1.7rem,4vw,2.4rem)}
 .jobs p{opacity:.9}
 
-footer{background:var(--ink);color:rgba(255,255,255,.7);padding:44px 0;font-size:.88rem}
-footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
-footer .brand{display:flex;align-items:center;gap:12px;color:#fff;font-weight:700}
-footer .brand img{width:46px}
-footer .soc{display:flex;gap:16px}
-footer .soc a{color:#fff;text-decoration:none;font-weight:600}
-
+.ft{background:var(--saffron);color:var(--ink);overflow:hidden;padding-top:64px}
+.ft-cols{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+.ft h4{font-size:.95rem;font-weight:900;text-transform:uppercase;letter-spacing:.02em;margin-bottom:16px;color:var(--brown)}
+.ft-cols a,.ft-cols p{display:block;color:var(--ink);text-decoration:none;font-size:.98rem;margin-bottom:12px;line-height:1.4}
+.ft-cols a:hover{text-decoration:underline}
+.ft-cols small{opacity:.7}
+.ft-big{position:relative;margin-top:56px;min-height:300px}
+.ft-word{font-size:clamp(5rem,17vw,15.5rem);text-transform:none;font-weight:900;letter-spacing:-.06em;line-height:.8;color:var(--cream);position:relative;z-index:1;padding-top:40px}
+.ft-copy{position:relative;z-index:1;font-size:.85rem;padding:26px 0 30px;color:var(--brown)}
+.ft-bowl{position:absolute;right:-60px;bottom:-200px;width:min(46vw,560px);aspect-ratio:1;border-radius:50%;object-fit:cover;border:14px solid #FBF7F0;box-shadow:0 20px 50px rgba(59,38,16,.3);z-index:2}
+@media(max-width:760px){.ft-cols{grid-template-columns:1fr 1fr}.ft-bowl{width:50vw;right:-14vw;bottom:-20vw}.ft-big{min-height:220px}.ft-copy{max-width:52%}}
 @media(max-width:900px){
   .steps,.bases{grid-template-columns:1fr}
   .bases{grid-template-columns:1fr 1fr}
@@ -245,7 +244,7 @@ footer .soc a{color:#fff;text-decoration:none;font-weight:600}
     </div>
   </section>
 
-  <div class="ticker" aria-hidden="true"><div class="ticker-clip"><div class="track" id="ticker"></div></div></div>
+  <div class="ticker" aria-hidden="true"><div class="ticker-clip"><div class="track" id="ticker"><span>Chicken shawarma</span><i>✦</i><span>Steak shawarma</span><i>✦</i><span>Falafel</span><i>✦</i><span>Hummus</span><i>✦</i><span>Bowls</span><i>✦</i><span>Wraps</span><i>✦</i><span>Open daily 11am–10pm</span><i>✦</i><span>964 W Belmont Ave</span><i>✦</i><span>Chicken shawarma</span><i>✦</i><span>Steak shawarma</span><i>✦</i><span>Falafel</span><i>✦</i><span>Hummus</span><i>✦</i><span>Bowls</span><i>✦</i><span>Wraps</span><i>✦</i><span>Open daily 11am–10pm</span><i>✦</i><span>964 W Belmont Ave</span><i>✦</i><span>Chicken shawarma</span><i>✦</i><span>Steak shawarma</span><i>✦</i><span>Falafel</span><i>✦</i><span>Hummus</span><i>✦</i><span>Bowls</span><i>✦</i><span>Wraps</span><i>✦</i><span>Open daily 11am–10pm</span><i>✦</i><span>964 W Belmont Ave</span><i>✦</i><span>Chicken shawarma</span><i>✦</i><span>Steak shawarma</span><i>✦</i><span>Falafel</span><i>✦</i><span>Hummus</span><i>✦</i><span>Bowls</span><i>✦</i><span>Wraps</span><i>✦</i><span>Open daily 11am–10pm</span><i>✦</i><span>964 W Belmont Ave</span><i>✦</i></div></div></div>
 
   <section id="menu">
     <div class="wrap">
@@ -268,19 +267,19 @@ footer .soc a{color:#fff;text-decoration:none;font-weight:600}
         </div>
         <div class="fstep">
           <div class="fhead"><b>4</b><div><h3>Sauce it up</h3><p>Pick your finish.</p></div></div>
-          <div class="sauces" id="sauces"><div class="sauce"><i style="background:#F4EFE2"></i>Garlic</div><div class="sauce"><i style="background:#D9C39A"></i>Tahini</div><div class="sauce"><i style="background:#FFFFFF"></i>White</div><div class="sauce"><i style="background:#D2461E"></i>Fire</div></div>
+          <div class="sauces" id="sauces"><div class="sauce"><svg viewBox="0 0 200 200" aria-hidden="true"><defs><filter id="sp0"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3"></feTurbulence><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.6 1.05"></feColorMatrix><feComposite in2="SourceGraphic" operator="in"></feComposite></filter><filter id="sw0"><feTurbulence type="turbulence" baseFrequency=".012 .03" numOctaves="2" seed="9"></feTurbulence><feDisplacementMap in="SourceGraphic" scale="26"></feDisplacementMap></filter><radialGradient id="g0" cx=".38" cy=".32" r=".8"><stop offset="0" stop-color="#fff" stop-opacity=".55"></stop><stop offset=".35" stop-color="#fff" stop-opacity="0"></stop><stop offset="1" stop-color="#000" stop-opacity=".18"></stop></radialGradient><clipPath id="c0"><circle cx="100" cy="100" r="80"></circle></clipPath></defs><circle cx="100" cy="100" r="97" fill="#fff"></circle><circle cx="100" cy="100" r="97" fill="none" stroke="#E7E0D3" stroke-width="2"></circle><circle cx="100" cy="100" r="82" fill="#EFEAE0"></circle><g clip-path="url(#c0)"><circle cx="100" cy="100" r="80" fill="#F4EFE2"></circle><g filter="url(#sw0)" opacity=".18"><path d="M40 90 Q80 50 120 80 T175 95 M35 125 Q85 95 130 120 T180 135 M60 60 Q100 35 150 55" stroke="#fff" stroke-width="10" fill="none" stroke-linecap="round"></path></g><rect width="200" height="200" fill="#F4EFE2" filter="url(#sp0)" opacity=".1"></rect><circle cx="100" cy="100" r="80" fill="url(#g0)"></circle></g></svg>Garlic</div><div class="sauce"><svg viewBox="0 0 200 200" aria-hidden="true"><defs><filter id="sp1"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="4"></feTurbulence><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.6 1.05"></feColorMatrix><feComposite in2="SourceGraphic" operator="in"></feComposite></filter><filter id="sw1"><feTurbulence type="turbulence" baseFrequency=".012 .03" numOctaves="2" seed="10"></feTurbulence><feDisplacementMap in="SourceGraphic" scale="26"></feDisplacementMap></filter><radialGradient id="g1" cx=".38" cy=".32" r=".8"><stop offset="0" stop-color="#fff" stop-opacity=".55"></stop><stop offset=".35" stop-color="#fff" stop-opacity="0"></stop><stop offset="1" stop-color="#000" stop-opacity=".18"></stop></radialGradient><clipPath id="c1"><circle cx="100" cy="100" r="80"></circle></clipPath></defs><circle cx="100" cy="100" r="97" fill="#fff"></circle><circle cx="100" cy="100" r="97" fill="none" stroke="#E7E0D3" stroke-width="2"></circle><circle cx="100" cy="100" r="82" fill="#EFEAE0"></circle><g clip-path="url(#c1)"><circle cx="100" cy="100" r="80" fill="#D9C39A"></circle><g filter="url(#sw1)" opacity=".18"><path d="M40 90 Q80 50 120 80 T175 95 M35 125 Q85 95 130 120 T180 135 M60 60 Q100 35 150 55" stroke="#fff" stroke-width="10" fill="none" stroke-linecap="round"></path></g><rect width="200" height="200" fill="#D9C39A" filter="url(#sp1)" opacity=".1"></rect><circle cx="100" cy="100" r="80" fill="url(#g1)"></circle></g></svg>Tahini</div><div class="sauce"><svg viewBox="0 0 200 200" aria-hidden="true"><defs><filter id="sp2"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="5"></feTurbulence><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.6 1.05"></feColorMatrix><feComposite in2="SourceGraphic" operator="in"></feComposite></filter><filter id="sw2"><feTurbulence type="turbulence" baseFrequency=".012 .03" numOctaves="2" seed="11"></feTurbulence><feDisplacementMap in="SourceGraphic" scale="26"></feDisplacementMap></filter><radialGradient id="g2" cx=".38" cy=".32" r=".8"><stop offset="0" stop-color="#fff" stop-opacity=".55"></stop><stop offset=".35" stop-color="#fff" stop-opacity="0"></stop><stop offset="1" stop-color="#000" stop-opacity=".18"></stop></radialGradient><clipPath id="c2"><circle cx="100" cy="100" r="80"></circle></clipPath></defs><circle cx="100" cy="100" r="97" fill="#fff"></circle><circle cx="100" cy="100" r="97" fill="none" stroke="#E7E0D3" stroke-width="2"></circle><circle cx="100" cy="100" r="82" fill="#EFEAE0"></circle><g clip-path="url(#c2)"><circle cx="100" cy="100" r="80" fill="#FFFFFF"></circle><g filter="url(#sw2)" opacity=".18"><path d="M40 90 Q80 50 120 80 T175 95 M35 125 Q85 95 130 120 T180 135 M60 60 Q100 35 150 55" stroke="#fff" stroke-width="10" fill="none" stroke-linecap="round"></path></g><rect width="200" height="200" fill="#FFFFFF" filter="url(#sp2)" opacity=".1"></rect><circle cx="100" cy="100" r="80" fill="url(#g2)"></circle></g></svg>White</div><div class="sauce"><svg viewBox="0 0 200 200" aria-hidden="true"><defs><filter id="sp3"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="6"></feTurbulence><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.6 1.05"></feColorMatrix><feComposite in2="SourceGraphic" operator="in"></feComposite></filter><filter id="sw3"><feTurbulence type="turbulence" baseFrequency=".012 .03" numOctaves="2" seed="12"></feTurbulence><feDisplacementMap in="SourceGraphic" scale="26"></feDisplacementMap></filter><radialGradient id="g3" cx=".38" cy=".32" r=".8"><stop offset="0" stop-color="#fff" stop-opacity=".55"></stop><stop offset=".35" stop-color="#fff" stop-opacity="0"></stop><stop offset="1" stop-color="#000" stop-opacity=".18"></stop></radialGradient><clipPath id="c3"><circle cx="100" cy="100" r="80"></circle></clipPath></defs><circle cx="100" cy="100" r="97" fill="#fff"></circle><circle cx="100" cy="100" r="97" fill="none" stroke="#E7E0D3" stroke-width="2"></circle><circle cx="100" cy="100" r="82" fill="#EFEAE0"></circle><g clip-path="url(#c3)"><circle cx="100" cy="100" r="80" fill="#D2461E"></circle><g filter="url(#sw3)" opacity=".18"><path d="M40 90 Q80 50 120 80 T175 95 M35 125 Q85 95 130 120 T180 135 M60 60 Q100 35 150 55" stroke="#fff" stroke-width="10" fill="none" stroke-linecap="round"></path></g><rect width="200" height="200" fill="#D2461E" filter="url(#sp3)" opacity=".1"></rect><circle cx="100" cy="100" r="80" fill="url(#g3)"></circle></g></svg>Fire</div></div>
         </div>
         <div class="combo" id="combo">Make it a combo: add fries, rice or soup + a fountain drink.</div>
       </div>
 
-      <div class="sub"><div><div class="eyebrow">House favorites</div><h3>SemSem signatures</h3></div></div>
+      <div class="sub"><div><div class="eyebrow">House favorites</div><h3><span class="nm">SemSem</span> signatures</h3></div></div>
       <div class="grid4" id="signatures"><div class="card"><div class="ph"><img src="/chicken-over-rice.jpg" alt="" loading="lazy"></div><div class="body"><h3>Chicken Over Rice</h3><p>Grilled chicken, tomatoes, lettuce and our famous white &amp; fire sauce with toasted pita.</p></div></div><div class="card"><div class="ph"><img class="mark" src="/logo.png" alt=""></div><div class="body"><h3>Gyro Over Rice</h3><p>Gyros, onions, green peppers, tomatoes, lettuce, white &amp; fire sauce and toasted pita.</p></div></div><div class="card"><div class="ph"><img src="/shawarma-garden.jpg" alt="" loading="lazy"></div><div class="body"><h3>Shawarma Garden</h3><p>Chicken or steak shawarma cut into pieces, with veggies, coleslaw, sauce and fries.</p></div></div><div class="card"><div class="ph"><img src="/shawarma-halabi.jpg" alt="" loading="lazy"></div><div class="body"><h3>Shawarma Halabi</h3><p>Chicken or steak with peppers, olives, pickles and melted cheese, served with veggies, coleslaw and fries.</p></div></div><div class="card"><div class="ph"><img src="/shawarma-plate.jpg" alt="" loading="lazy"></div><div class="body"><h3>Shawarma Bashka</h3><p>Peppers, olives, mushrooms, pickles, cheese, BBQ &amp; garlic sauce, with veggies, coleslaw and fries.</p></div></div><div class="card"><div class="ph"><img src="/steak-wrap.jpg" alt="" loading="lazy"></div><div class="body"><h3>SemSem Roll</h3><p>Falafel, chicken or steak, rolled tight with pickles and house sauce.</p></div></div><div class="card"><div class="ph"><img src="/vegetarian-plate.jpg" alt="" loading="lazy"></div><div class="body"><h3>Vegetarian Plate</h3><p>Hummus, baba ghanouj, two salads, 3 falafel, 2 grape leaves and two pitas.</p></div></div><div class="card"><div class="ph"><img class="mark" src="/logo.png" alt=""></div><div class="body"><h3>Zinger Combo</h3><p>Extra-crispy chicken filet, pickles, tomato, lettuce, cheese and spicy Zinger sauce with fries.</p></div></div></div>
 
-      <div class="sub"><div><div class="eyebrow">To share</div><h3>Mezze & plates</h3></div></div>
+      <div class="sub"><div><div class="eyebrow">To share</div><h3>Mezze &amp; plates</h3></div></div>
       <div class="mezze" id="mezze"><div class="mz"><img src="/hummus.jpg" alt="" loading="lazy"><div><b>Hummus</b><span>Small · Large</span></div></div><div class="mz"><img src="/baba-ghanouj.jpg" alt="" loading="lazy"><div><b>Baba Ghanouj</b><span>Small · Large</span></div></div><div class="mz"><div><b>Topped Hummus</b><span>With chicken or steak</span></div></div><div class="mz"><div><b>Falafel</b><span>Piece · Dozen</span></div></div><div class="mz"><div><b>Stuffed Falafel</b><span>Onions, sumac, sesame</span></div></div><div class="mz"><div><b>Shawarma Plate</b><span>Chicken or steak · Small · Large</span></div></div><div class="mz"><div><b>Gyros Plate</b><span>With cucumber yogurt salad and fries</span></div></div></div>
 
       <div class="lists">
-        <div class="pick"><h3>Sides & extras</h3><ul class="mlist" id="sides"><li>Lentil Soup</li><li>Grape Leaves (6)</li><li>Salad</li><li>Rice</li><li>Fries</li><li>Baklava</li><li>Extra Pita</li></ul></div>
+        <div class="pick"><h3>Sides &amp; extras</h3><ul class="mlist" id="sides"><li>Lentil Soup</li><li>Grape Leaves (6)</li><li>Salad</li><li>Rice</li><li>Fries</li><li>Baklava</li><li>Extra Pita</li></ul></div>
         <div class="pick"><h3>Drinks</h3><ul class="mlist" id="drinks"><li>Fountain Drink</li><li>Water</li><li>Yogurt Drink</li><li>Hot Tea</li></ul></div>
       </div>
       <p class="note">Prices and full details are shown when you order.</p>
@@ -296,12 +295,12 @@ footer .soc a{color:#fff;text-decoration:none;font-weight:600}
         <div class="opt">
           <h3>Pickup</h3>
           <p>Order ahead and grab it at the counter.</p>
-          <a class="btn btn-saffron" id="pickup" href="#">Order pickup</a>
+          <a class="btn btn-saffron soon" id="pickup">Order pickup <span class="tag">Coming soon</span></a>
         </div>
         <div class="opt">
           <h3>Delivery</h3>
           <p>Find us on your favorite app.</p>
-          <div class="dl" id="delivery"><a class="btn btn-light soon">DoorDash <span class="tag">Coming soon</span></a><a class="btn btn-light soon">Uber Eats <span class="tag">Coming soon</span></a><a class="btn btn-light soon">Grubhub <span class="tag">Coming soon</span></a></div>
+          <div class="dl" id="delivery"><a class="btn btn-light dlv soon">DoorDash <span class="tag">Coming soon</span></a><a class="btn btn-light dlv soon">Uber Eats <span class="tag">Coming soon</span></a></div>
         </div>
       </div>
     </div>
@@ -313,7 +312,7 @@ footer .soc a{color:#fff;text-decoration:none;font-weight:600}
         <div class="eyebrow">Catering</div>
         <h2 data-k="catering.title">Catering for any crowd</h2>
         <p class="lead" data-k="catering.text">Shawarma platters, salads, dips, rice and grape leaves for offices, parties and game days. Tell us about your event and we'll put together the spread.</p>
-        <a class="btn btn-dark" id="cater-btn" href="#">Request catering</a>
+        <a class="btn btn-dark soon" id="cater-btn">Request catering <span class="tag">Coming soon</span></a>
       </div>
       <div class="imgs">
         <img src="/catering-trays.jpg" alt="Catering trays of salads, grape leaves and rice" loading="lazy">
@@ -331,10 +330,10 @@ footer .soc a{color:#fff;text-decoration:none;font-weight:600}
         <div class="info">
           <div><h3>Address</h3><div class="big" data-k="address">964 W Belmont Ave</div><div data-k="city">Chicago, IL 60657</div></div>
           <div><h3>Hours</h3><div class="hrs" id="hours"><div><span>Every day</span><b>11am – 10pm</b></div></div></div>
-          <div id="phone-wrap" hidden><h3>Phone</h3><a class="big" id="phone" href="#"></a></div>
-          <a class="btn btn-line" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=964+W+Belmont+Ave,+Chicago,+IL+60657">Get directions</a>
+          <div id="phone-wrap" hidden=""><h3>Phone</h3><a class="big" id="phone" href="#"></a></div>
+          <a class="btn btn-line" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=964+W+Belmont+Ave,+Chicago,+IL+60657">Get directions</a>
         </div>
-        <div class="map"><iframe title="Map to SemSem, 964 W Belmont Ave" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=964+W+Belmont+Ave,+Chicago,+IL+60657&output=embed"></iframe></div>
+        <div class="map"><iframe title="Map to SemSem, 964 W Belmont Ave" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=964+W+Belmont+Ave,+Chicago,+IL+60657&amp;output=embed"></iframe></div>
       </div>
     </div>
   </section>
@@ -366,11 +365,16 @@ footer .soc a{color:#fff;text-decoration:none;font-weight:600}
   </section>
 </main>
 
-<footer>
-  <div class="wrap">
-    <div class="brand"><img src="/logo.png" alt=""><div><span class="wm"><b style="color:#fff">SemSem</b><small style="color:var(--saffron)">Mediterranean</small></span><br><span style="font-weight:400;opacity:.7">964 W Belmont Ave · Chicago, IL 60657</span></div></div>
-    <div class="soc" id="social"></div>
-    <div>© <span id="yr"></span> SemSem Mediterranean</div>
+<footer class="ft">
+  <div class="wrap ft-cols">
+    <div><h4>Visit</h4><p>964 W Belmont Ave<br>Chicago, IL 60657</p><p>Open daily<br>11am – 10pm</p><a href="https://www.google.com/maps/dir/?api=1&amp;destination=964+W+Belmont+Ave,+Chicago,+IL+60657" target="_blank" rel="noopener">Get directions ↗</a></div>
+    <div><h4>Explore</h4><a href="#menu">Menu</a><a href="#order">Order</a><a href="#catering">Catering</a><a href="#visit">Hours &amp; location</a></div>
+    <div><h4>Company</h4><a href="https://tally.so/r/kbbRjd" target="_blank" rel="noopener" id="ft-jobs">Work with us</a><a href="#catering">Catering requests</a></div>
+    <div><h4>Follow</h4><a href="https://www.instagram.com/semsemonbelmont/" target="_blank" rel="noopener" id="ft-ig">Instagram ↗<br><small>@semsemonbelmont</small></a></div>
+  </div>
+  <div class="ft-big">
+    <div class="wrap"><div class="ft-word" aria-hidden="true">SemSem</div><p class="ft-copy">© <span id="yr">2026</span> <span class="nm">SemSem</span> Mediterranean · Lakeview, Chicago</p></div>
+    <img class="ft-bowl" src="/footer-bowl.jpg" alt="" loading="lazy">
   </div>
 </footer>
 
@@ -397,7 +401,8 @@ fetch('/content.json',{cache:'no-store'}).then(r=>r.json()).then(c=>{
   $('#proteins').innerHTML=b.proteins.map(tile).join('');
   $('#toppings').innerHTML=b.toppings.map(tile).join('');
   $('#more').innerHTML=(b.more_toppings||[]).map(x=>`<span class="chip">${esc(x)}</span>`).join('');
-  $('#sauces').innerHTML=b.sauces.map(x=>`<div class="sauce"><i style="background:${esc(x.color)}"></i>${esc(x.name)}</div>`).join('');
+  const sauceSvg=(c,i)=>`<svg viewBox="0 0 200 200" aria-hidden="true"><defs><filter id="sp${i}"><feTurbulence type="fractalNoise" baseFrequency="${.9}" numOctaves="2" seed="${i+3}"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.6 1.05"/><feComposite in2="SourceGraphic" operator="in"/></filter><filter id="sw${i}"><feTurbulence type="turbulence" baseFrequency=".012 .03" numOctaves="2" seed="${i+9}"/><feDisplacementMap in="SourceGraphic" scale="26"/></filter><radialGradient id="g${i}" cx=".38" cy=".32" r=".8"><stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset=".35" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".18"/></radialGradient><clipPath id="c${i}"><circle cx="100" cy="100" r="80"/></clipPath></defs><circle cx="100" cy="100" r="97" fill="#fff"/><circle cx="100" cy="100" r="97" fill="none" stroke="#E7E0D3" stroke-width="2"/><circle cx="100" cy="100" r="82" fill="#EFEAE0"/><g clip-path="url(#c${i})"><circle cx="100" cy="100" r="80" fill="${c}"/><g filter="url(#sw${i})" opacity=".18"><path d="M40 90 Q80 50 120 80 T175 95 M35 125 Q85 95 130 120 T180 135 M60 60 Q100 35 150 55" stroke="#fff" stroke-width="10" fill="none" stroke-linecap="round"/></g><rect width="200" height="200" fill="${c}" filter="url(#sp${i})" opacity=".1"/><circle cx="100" cy="100" r="80" fill="url(#g${i})"/></g></svg>`;
+  $('#sauces').innerHTML=b.sauces.map((x,i)=>`<div class="sauce">${sauceSvg(x.color,i)}${esc(x.name)}</div>`).join('');
   $('#combo').textContent=b.combo;
   const list=(id,a)=>$(id).innerHTML=a.map(x=>`<li>${esc(x)}</li>`).join('');list('#sides',m.sides);list('#drinks',m.drinks);
   $('#signatures').innerHTML=m.signatures.map(x=>`<div class="card"><div class="ph">${ph(x.image)}</div><div class="body"><h3>${esc(x.name)}</h3><p>${esc(x.text)}</p></div></div>`).join('');
@@ -406,14 +411,14 @@ fetch('/content.json',{cache:'no-store'}).then(r=>r.json()).then(c=>{
   if(c.phone){$('#phone-wrap').hidden=false;$('#phone').textContent=c.phone;$('#phone').href='tel:'+c.phone.replace(/\D/g,'')}
   link($('#pickup'),c.order.pickup_url,c.order.pickup_label);
   $('#delivery').innerHTML='';
-  c.order.delivery.forEach(d=>{const a=document.createElement('a');a.className='btn btn-light';$('#delivery').append(a);link(a,d.url,d.name)});
+  c.order.delivery.forEach(d=>{const a=document.createElement('a');a.className='btn btn-light dlv';$('#delivery').append(a);link(a,d.url,d.name);if(d.logo){a.querySelector('.tag')?.remove();const tg=a.classList.contains('soon');a.innerHTML=`<img src="${esc(d.logo)}" alt="${esc(d.name)}">`+(tg?' <span class="tag">Coming soon</span>':'')}});
   link($('#cater-btn'),c.catering.button_url,c.catering.button_label);
   link($('#jobs-btn'),c.jobs.button_url,c.jobs.button_label);
   const ig=c.instagram||{};
   if(ig.url){$('#ig-btn').href=ig.url;document.querySelectorAll('.ig-grid a').forEach(a=>a.href=ig.url)}
   if(ig.behold_feed_id){const w=document.createElement('behold-widget');w.setAttribute('feed-id',ig.behold_feed_id);$('#ig-feed').replaceChildren(w);const sc=document.createElement('script');sc.type='module';sc.src='https://w.behold.so/widget.js';document.head.append(sc)}
-  const s=c.social||{};$('#social').innerHTML=Object.entries(s).filter(([,u])=>u).map(([k,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener">${k[0].toUpperCase()+k.slice(1)}</a>`).join('');
 });
 </script>
-</body>
-</html>
+
+
+</body></html>

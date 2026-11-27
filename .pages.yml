@@ -34,6 +34,7 @@ content:
             fields:
               - { name: name, label: App name, type: string }
               - { name: url, label: Link, type: string }
+              - { name: logo, label: Official logo badge, type: image }
       - name: catering
         label: Catering
         type: object
