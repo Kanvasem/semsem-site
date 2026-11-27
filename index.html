@@ -44,7 +44,7 @@ section{padding:88px 0}
 .announce a{color:#fff;margin-left:8px}
 
 /* floating pill nav */
-header{position:sticky;top:0;z-index:30;padding:0 22px;height:0;overflow:visible}
+header{position:fixed;left:0;right:0;top:0;z-index:30;padding:0 22px;height:0;overflow:visible}
 .nav{max-width:1160px;margin:0 auto;position:relative;top:14px;display:flex;align-items:center;justify-content:space-between;gap:20px;height:60px;padding:0 10px 0 18px;border-radius:999px;background:rgba(251,247,240,.86);backdrop-filter:blur(14px);box-shadow:0 6px 24px rgba(59,38,16,.12)}
 .nav .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--brown)}
 .wm{display:flex;flex-direction:column;line-height:1}
@@ -74,6 +74,45 @@ header{position:sticky;top:0;z-index:30;padding:0 22px;height:0;overflow:visible
 .hero .badge .t3::before,.hero .badge .t3::after{content:"✦";color:var(--brown);margin:0 5px;font-size:.6rem}
 @media(max-width:760px){.hero{height:auto;min-height:0}.hero picture{position:relative;display:block;aspect-ratio:1/1.08}.hero picture img{position:absolute}.hero{background:var(--cream)}.hero .wrap{padding:0 22px 32px;margin-top:-190px}.hl .ctas{margin-top:22px}.hero .badge{width:108px;height:108px;top:90px;right:18px}.hero .badge .t2{font-size:1.02rem}.hero .badge .t1,.hero .badge .t3{font-size:.5rem;letter-spacing:.16em}.hero .badge::before{inset:6px}}
 
+/* split hero (Naf Naf-inspired) */
+.hx{padding:96px 0 0;background:var(--cream)}
+.hx-frame{position:relative;max-width:1320px;margin:0 auto;height:min(78vh,620px);min-height:520px;overflow:hidden;border-radius:0}
+.hx-slide{position:absolute;inset:0;display:grid;grid-template-columns:52% 48%;opacity:0;visibility:hidden;transition:opacity .6s}
+.hx-slide.on{opacity:1;visibility:visible}
+.hx-panel{position:relative;z-index:1;background:var(--brown);color:var(--cream);padding:56px 40px 56px 64px;display:flex;flex-direction:column;justify-content:center;clip-path:polygon(0 0,86% 0,100% 100%,0 100%);margin-right:-12%}
+.hx-panel::after{content:"";position:absolute;top:0;bottom:0;right:0;width:22%;background:var(--saffron);clip-path:polygon(36% 0,52% 0,100% 100%,84% 100%);z-index:-1}
+.hx-panel h1{font-size:clamp(2.8rem,6.4vw,5.6rem);font-weight:900;text-transform:uppercase;letter-spacing:-.03em;line-height:.9;margin-top:22px;max-width:9.5em}
+.hx-panel p{font-size:1.15rem;margin:20px 0 28px;max-width:28em;opacity:.92}
+.hx-panel .ctas{display:flex;gap:12px;flex-wrap:wrap}
+.btn-ghost{border-color:var(--cream);color:var(--cream)}.btn-ghost:hover{background:var(--cream);color:var(--brown)}
+.hx-blob{width:150px;height:118px;background:var(--saffron);color:var(--ink);border-radius:58% 42% 52% 48%/55% 48% 52% 45%;display:grid;place-items:center;transform:rotate(-10deg);text-align:center}
+.hx-blob span{font-weight:900;text-transform:uppercase;font-size:1.12rem;line-height:1;letter-spacing:-.01em}
+.hx-photo{position:relative;background:#ECEAE6}
+.hx-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hx-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:3;width:48px;height:48px;border-radius:50%;border:0;background:var(--saffron);color:var(--ink);font-size:1.3rem;font-weight:700;cursor:pointer;box-shadow:0 6px 16px rgba(0,0,0,.2)}
+.hx-arrow.prev{left:14px}.hx-arrow.next{right:14px}
+.hx-dots{position:absolute;left:64px;bottom:26px;z-index:3;display:flex;gap:10px}
+.hx-dots button{width:11px;height:11px;border-radius:50%;border:0;background:rgba(251,247,240,.4);cursor:pointer;padding:0}
+.hx-dots button.on{background:var(--cream)}
+.hx-bar{background:var(--olive);color:#fff;display:flex;justify-content:center;align-items:center;gap:26px;flex-wrap:wrap;padding:18px 22px;font-weight:900;text-transform:uppercase;letter-spacing:.01em;font-size:clamp(1rem,2vw,1.35rem)}
+.hx-bar .btn{padding:10px 26px;font-size:.95rem}
+.hx-bar>span{text-align:center}
+@media(max-width:860px){
+  .hx{padding-top:84px}
+  .hx-frame{height:auto;min-height:0}
+  .hx-slide{position:relative;display:none;grid-template-columns:1fr}
+  .hx-slide.on{display:grid}
+  .hx-photo{order:-1;aspect-ratio:4/3}
+  .hx-panel{clip-path:none;margin:0;padding:36px 22px 56px}
+  .hx-panel::after{display:none}
+  .hx-blob{position:absolute;top:-66px;right:18px;width:112px;height:90px}
+  .hx-blob span{font-size:.85rem}
+  .hx-panel h1{margin-top:0}
+  .hx-arrow{top:calc(37.5vw);width:40px;height:40px}
+  .hx-dots{left:22px;bottom:20px}
+}
+/* doodle pattern */
+.doodle{background-color:#F6F0E6;background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22420%22%20height%3D%22420%22%20viewBox%3D%220%200%20420%20420%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%235D3C17%22%20stroke-width%3D%222.2%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20opacity%3D%22.10%22%3E%3Cg%20transform%3D%22translate%2860%2050%29%20rotate%28-25%29%22%3E%3Cpath%20d%3D%22M-34%20-10%20H22%20a10%2010%200%200%201%200%2020%20H-34%20a10%2010%200%200%201%200%20-20Z%22/%3E%3Cpath%20d%3D%22M-34%20-10%20a10%2010%200%200%200%200%2020%22/%3E%3Cpath%20d%3D%22M-34%20-4%20a4%204%200%201%200%200.1%200%22/%3E%3Cpath%20d%3D%22M-6%20-10%20l4%2020%20M8%20-10%20l4%2020%22/%3E%3C/g%3E%3Cg%20transform%3D%22translate%28200%2060%29%20rotate%288%29%22%3E%3Cpath%20d%3D%22M-32%200%20H32%20Q30%2028%200%2028%20Q-30%2028%20-32%200Z%22/%3E%3Cpath%20d%3D%22M-26%200%20q4%20-12%2012%20-6%20q6%20-12%2014%20-4%20q8%20-10%2014%200%20q8%20-6%2012%204%22/%3E%3Cpath%20d%3D%22M-12%2014%20h24%22/%3E%3C/g%3E%3Cg%20transform%3D%22translate%28330%2055%29%20rotate%28-10%29%22%3E%3Cpath%20d%3D%22M-30%206%20Q-30%20-26%200%20-26%20Q30%20-26%2030%206%20Z%22/%3E%3Cpath%20d%3D%22M-22%20-4%20q6%20-10%2012%20-2%20q6%20-10%2012%200%20q6%20-8%2012%202%22/%3E%3Cpath%20d%3D%22M-30%206%20h60%22/%3E%3C/g%3E%3Cg%20transform%3D%22translate%28270%20120%29%20rotate%2830%29%22%3E%3Cpath%20d%3D%22M0%20-12%20Q10%200%200%2012%20Q-10%200%200%20-12Z%20M0%20-12%20V12%22/%3E%3C/g%3E%3Cg%20transform%3D%22translate%28120%20125%29%20rotate%2820%29%22%3E%3Cellipse%20rx%3D%228%22%20ry%3D%226%22/%3E%3Cellipse%20rx%3D%222.5%22%20ry%3D%222%22/%3E%3C/g%3E%3Cg%20transform%3D%22translate%2840%20175%29%22%3E%3Ccircle%20r%3D%2210%22/%3E%3Cpath%20d%3D%22M0%20-10%20V10%20M-10%200%20H10%20M-7%20-7%20L7%207%20M7%20-7%20L-7%207%22/%3E%3C/g%3E%3Cg%20transform%3D%22translate%28110%20215%29%20rotate%2812%29%22%3E%3Cpath%20d%3D%22M-30%206%20Q-30%20-26%200%20-26%20Q30%20-26%2030%206%20Z%22/%3E%3Cpath%20d%3D%22M-22%20-4%20q6%20-10%2012%20-2%20q6%20-10%2012%200%20q6%20-8%2012%202%22/%3E%3Cpath%20d%3D%22M-30%206%20h60%22/%3E%3C/g%3E%3Cg%20transform%3D%22translate%28250%20215%29%20rotate%2830%29%22%3E%3Cpath%20d%3D%22M-34%20-10%20H22%20a10%2010%200%200%201%200%2020%20H-34%20a10%2010%200%200%201%200%20-20Z%22/%3E%3Cpath%20d%3D%22M-34%20-10%20a10%2010%200%200%200%200%2020%22/%3E%3Cpath%20d%3D%22M-34%20-4%20a4%204%200%201%200%200.1%200%22/%3E%3Cpath%20d%3D%22M-6%20-10%20l4%2020%20M8%20-10%20l4%2020%22/%3E%3C/g%3E%3Cg%20transform%3D%22translate%28370%20190%29%20rotate%28-8%29%22%3E%3Cpath%20d%3D%22M-32%200%20H32%20Q30%2028%200%2028%20Q-30%2028%20-32%200Z%22/%3E%3Cpath%20d%3D%22M-26%200%20q4%20-12%2012%20-6%20q6%20-12%2014%20-4%20q8%20-10%2014%200%20q8%20-6%2012%204%22/%3E%3Cpath%20d%3D%22M-12%2014%20h24%22/%3E%3C/g%3E%3Cg%20transform%3D%22translate%28185%20150%29%22%3E%3Ccircle%20r%3D%222.5%22/%3E%3Ccircle%20cx%3D%229%22%20cy%3D%224%22%20r%3D%222.5%22/%3E%3Ccircle%20cx%3D%222%22%20cy%3D%2211%22%20r%3D%222.5%22/%3E%3C/g%3E%3Cg%20transform%3D%22translate%2830%20300%29%20rotate%28-40%29%22%3E%3Cpath%20d%3D%22M0%20-12%20Q10%200%200%2012%20Q-10%200%200%20-12Z%20M0%20-12%20V12%22/%3E%3C/g%3E%3Cg%20transform%3D%22translate%28330%20290%29%20rotate%28-15%29%22%3E%3Cellipse%20rx%3D%228%22%20ry%3D%226%22/%3E%3Cellipse%20rx%3D%222.5%22%20ry%3D%222%22/%3E%3C/g%3E%3Cg%20transform%3D%22translate%2870%20330%29%20rotate%28-6%29%22%3E%3Cpath%20d%3D%22M-32%200%20H32%20Q30%2028%200%2028%20Q-30%2028%20-32%200Z%22/%3E%3Cpath%20d%3D%22M-26%200%20q4%20-12%2012%20-6%20q6%20-12%2014%20-4%20q8%20-10%2014%200%20q8%20-6%2012%204%22/%3E%3Cpath%20d%3D%22M-12%2014%20h24%22/%3E%3C/g%3E%3Cg%20transform%3D%22translate%28200%20330%29%20rotate%28-18%29%22%3E%3Cpath%20d%3D%22M-30%206%20Q-30%20-26%200%20-26%20Q30%20-26%2030%206%20Z%22/%3E%3Cpath%20d%3D%22M-22%20-4%20q6%20-10%2012%20-2%20q6%20-10%2012%200%20q6%20-8%2012%202%22/%3E%3Cpath%20d%3D%22M-30%206%20h60%22/%3E%3C/g%3E%3Cg%20transform%3D%22translate%28340%20350%29%20rotate%28-35%29%22%3E%3Cpath%20d%3D%22M-34%20-10%20H22%20a10%2010%200%200%201%200%2020%20H-34%20a10%2010%200%200%201%200%20-20Z%22/%3E%3Cpath%20d%3D%22M-34%20-10%20a10%2010%200%200%200%200%2020%22/%3E%3Cpath%20d%3D%22M-34%20-4%20a4%204%200%201%200%200.1%200%22/%3E%3Cpath%20d%3D%22M-6%20-10%20l4%2020%20M8%20-10%20l4%2020%22/%3E%3C/g%3E%3Cg%20transform%3D%22translate%28260%20280%29%22%3E%3Ccircle%20r%3D%2210%22/%3E%3Cpath%20d%3D%22M0%20-10%20V10%20M-10%200%20H10%20M-7%20-7%20L7%207%20M7%20-7%20L-7%207%22/%3E%3C/g%3E%3Cg%20transform%3D%22translate%28130%20395%29%22%3E%3Ccircle%20r%3D%222.5%22/%3E%3Ccircle%20cx%3D%229%22%20cy%3D%224%22%20r%3D%222.5%22/%3E%3Ccircle%20cx%3D%222%22%20cy%3D%2211%22%20r%3D%222.5%22/%3E%3C/g%3E%3Cg%20transform%3D%22translate%28395%20110%29%20rotate%2860%29%22%3E%3Cpath%20d%3D%22M0%20-12%20Q10%200%200%2012%20Q-10%200%200%20-12Z%20M0%20-12%20V12%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");background-size:420px 420px}
 /* marquee */
 .ticker{position:relative;z-index:2;background:var(--brown);color:var(--cream);white-space:nowrap;padding:16px 0;margin:0;font-weight:800;text-transform:uppercase;letter-spacing:.04em;font-size:.95rem}
 .ticker .track{display:inline-block;animation:tick 38s linear infinite}
@@ -213,7 +252,6 @@ header{position:sticky;top:0;z-index:30;padding:0 22px;height:0;overflow:visible
 </style>
 </head>
 <body>
-<div class="announce">Now hiring on Belmont <a id="ann-link" href="https://tally.so/r/kbbRjd" target="_blank" rel="noopener">Apply →</a></div>
 <header>
   <nav class="nav">
     <a class="brand" href="#top" aria-label="SemSem Mediterranean home"><img src="/logo.png" alt=""><span class="wm"><b>SemSem</b><small>Mediterranean</small></span></a>
@@ -227,27 +265,36 @@ header{position:sticky;top:0;z-index:30;padding:0 22px;height:0;overflow:visible
 </header>
 
 <main id="top">
-  <section class="hero" aria-label="Welcome">
-    <picture>
-      <source media="(max-width:760px)" srcset="/hero-bowl-m.jpg">
-      <img src="/hero-bowl.jpg" alt="SemSem bowl with chicken and beef shawarma, rice, tabouli, cabbage and tomatoes">
-    </picture>
-    <div class="badge"><div><span class="t1">Now in</span><span class="t2">Lakeview</span><span class="t3">Chicago</span></div></div>
-    <div class="wrap">
-      <div class="hl">
-        <h1><span>Shawarma,</span><br><span>built your way.</span></h1>
-        <p data-k="tagline">Fresh Mediterranean, made fast.</p>
-        <div class="ctas">
-          <a class="btn btn-saffron" href="#order">Order now</a>
-          <a class="btn btn-light" href="#menu">See the menu</a>
+  <section class="hx" aria-label="Welcome">
+    <div class="hx-frame">
+      <div class="hx-slide on" data-i="0">
+        <div class="hx-panel">
+          <div class="hx-blob"><span>Now in<br>Lakeview</span></div>
+          <h1>Shawarma,<br>built your way.</h1>
+          <p data-k="tagline">Fresh Mediterranean, made fast.</p>
+          <div class="ctas"><a class="btn btn-saffron" href="#order">Order now</a><a class="btn btn-ghost" href="#menu">See the menu</a></div>
         </div>
+        <div class="hx-photo"><img src="/slide-bowl.jpg" alt="SemSem bowl with chicken and beef shawarma, rice, tabouli and pickled cabbage"></div>
       </div>
+      <div class="hx-slide" data-i="1">
+        <div class="hx-panel">
+          <div class="hx-blob"><span>Feeds<br>a crowd</span></div>
+          <h1>Catering<br>done right.</h1>
+          <p>Shawarma platters, dips and salads for offices, parties and game days.</p>
+          <div class="ctas"><a class="btn btn-saffron" href="#catering">Plan your order</a></div>
+        </div>
+        <div class="hx-photo"><img src="/slide-catering.jpg" alt="SemSem shawarma roll catering platter with fries and toppings" loading="lazy"></div>
+      </div>
+      <button class="hx-arrow prev" aria-label="Previous slide">←</button>
+      <button class="hx-arrow next" aria-label="Next slide">→</button>
+      <div class="hx-dots"><button class="on" aria-label="Slide 1"></button><button aria-label="Slide 2"></button></div>
     </div>
+    <div class="hx-bar"><span>Now hiring on Belmont — join the <span class="nm">SemSem</span> team</span><a class="btn btn-saffron" href="https://tally.so/r/kbbRjd" target="_blank" rel="noopener">Apply now</a></div>
   </section>
 
   <div class="ticker" aria-hidden="true"><div class="ticker-clip"><div class="track" id="ticker"><span>Chicken shawarma</span><i>✦</i><span>Steak shawarma</span><i>✦</i><span>Falafel</span><i>✦</i><span>Hummus</span><i>✦</i><span>Bowls</span><i>✦</i><span>Wraps</span><i>✦</i><span>Open daily 11am–10pm</span><i>✦</i><span>964 W Belmont Ave</span><i>✦</i><span>Chicken shawarma</span><i>✦</i><span>Steak shawarma</span><i>✦</i><span>Falafel</span><i>✦</i><span>Hummus</span><i>✦</i><span>Bowls</span><i>✦</i><span>Wraps</span><i>✦</i><span>Open daily 11am–10pm</span><i>✦</i><span>964 W Belmont Ave</span><i>✦</i><span>Chicken shawarma</span><i>✦</i><span>Steak shawarma</span><i>✦</i><span>Falafel</span><i>✦</i><span>Hummus</span><i>✦</i><span>Bowls</span><i>✦</i><span>Wraps</span><i>✦</i><span>Open daily 11am–10pm</span><i>✦</i><span>964 W Belmont Ave</span><i>✦</i><span>Chicken shawarma</span><i>✦</i><span>Steak shawarma</span><i>✦</i><span>Falafel</span><i>✦</i><span>Hummus</span><i>✦</i><span>Bowls</span><i>✦</i><span>Wraps</span><i>✦</i><span>Open daily 11am–10pm</span><i>✦</i><span>964 W Belmont Ave</span><i>✦</i></div></div></div>
 
-  <section id="menu">
+  <section id="menu" class="doodle">
     <div class="wrap">
       <div class="eyebrow">Our menu</div>
       <h2>The menu.</h2>
@@ -391,6 +438,10 @@ function link(el,url,label){
 }
 const ph=img=>img?`<img src="${esc(img)}" alt="" loading="lazy">`:`<img class="mark" src="/logo.png" alt="">`;
 $('#yr').textContent=new Date().getFullYear();
+(()=>{const sl=[...document.querySelectorAll('.hx-slide')],dt=[...document.querySelectorAll('.hx-dots button')];let i=0,t;
+const go=n=>{i=(n+sl.length)%sl.length;sl.forEach((s,k)=>s.classList.toggle('on',k===i));dt.forEach((d,k)=>d.classList.toggle('on',k===i));clearInterval(t);t=setInterval(()=>go(i+1),7000)};
+document.querySelector('.hx-arrow.prev').onclick=()=>go(i-1);document.querySelector('.hx-arrow.next').onclick=()=>go(i+1);dt.forEach((d,k)=>d.onclick=()=>go(k));
+if(!matchMedia('(prefers-reduced-motion: reduce)').matches)go(0)})();
 const tk=['Chicken shawarma','Steak shawarma','Falafel','Hummus','Bowls','Wraps','Open daily 11am–10pm','964 W Belmont Ave'];
 const one=tk.map(t=>`<span>${t}</span><i>✦</i>`).join('');$('#ticker').innerHTML=one+one+one+one;
 
