@@ -123,10 +123,11 @@ header{position:sticky;top:0;z-index:30;padding:0 22px;height:0;overflow:visible
 
 .nm{text-transform:none!important}
 /* build flow */
-.flow{margin-top:40px;position:relative}
-.fstep{position:relative;padding:0 0 44px 64px}
+.flow{margin-top:64px;position:relative}
+.fstep{position:relative;padding:0 0 104px 64px}
+.fstep+.fstep{padding-top:8px}
 .fstep::before{content:"";position:absolute;left:21px;top:44px;bottom:0;width:2px;background:repeating-linear-gradient(var(--line) 0 6px,transparent 6px 12px)}
-.fhead{display:flex;align-items:center;gap:16px;margin:0 0 18px -64px}
+.fhead{display:flex;align-items:center;gap:16px;margin:0 0 34px -64px}
 .fhead b{flex:none;display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--brown);color:var(--saffron);font-weight:900;font-size:1.1rem;box-shadow:0 0 0 5px var(--cream)}
 .fhead h3{font-size:1.35rem;font-weight:900;text-transform:uppercase;letter-spacing:-.01em}
 .fhead p{color:#6b5a45;font-size:.92rem}
@@ -146,7 +147,7 @@ header{position:sticky;top:0;z-index:30;padding:0 22px;height:0;overflow:visible
 .sauce svg{width:100%;height:auto;display:block;margin-bottom:12px;filter:drop-shadow(0 12px 14px rgba(59,38,16,.22))}
 .flow .combo{margin:0 0 0 64px}
 @media(max-width:900px){.tiles.prot{grid-template-columns:repeat(5,1fr)}.tiles.top{grid-template-columns:repeat(4,1fr)}}
-@media(max-width:560px){.flow .bases{grid-template-columns:repeat(3,1fr)}.sauces{grid-template-columns:repeat(4,1fr);gap:12px}.sauce{font-size:.8rem}.fstep{padding-left:0}.fstep::before{display:none}.fhead{margin-left:0}.flow .combo{margin:0}.flow .bases{gap:10px}.bases .card .body{padding:10px 12px}.bases .card h3{font-size:.95rem}.bases .card p{display:none}.tiles.prot{grid-template-columns:repeat(3,1fr)}.tiles.top{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:560px){.fstep{padding-bottom:64px}.fhead{margin-bottom:22px}.flow .bases{grid-template-columns:repeat(3,1fr)}.sauces{grid-template-columns:repeat(4,1fr);gap:12px}.sauce{font-size:.8rem}.fstep{padding-left:0}.fstep::before{display:none}.fhead{margin-left:0}.flow .combo{margin:0}.flow .bases{gap:10px}.bases .card .body{padding:10px 12px}.bases .card h3{font-size:.95rem}.bases .card p{display:none}.tiles.prot{grid-template-columns:repeat(3,1fr)}.tiles.top{grid-template-columns:repeat(3,1fr)}}
 /* order */
 .order{background:var(--brown);color:#fff}
 .order h2,.order .eyebrow{color:#fff}.order .eyebrow{color:var(--saffron)}
