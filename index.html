@@ -68,9 +68,13 @@ header{position:sticky;top:0;z-index:30;padding:0 22px;height:0;overflow:visible
 .hl p{display:inline-block;background:var(--saffron);color:var(--ink);font-weight:600;font-size:clamp(1rem,1.6vw,1.2rem);padding:8px 14px;margin-top:0}
 .hl .ctas{display:flex;gap:12px;margin-top:20px;flex-wrap:wrap}
 .btn-saffron{box-shadow:0 4px 0 rgba(59,38,16,.25)}
-.hero .badge{position:absolute;right:max(22px,calc((100vw - 1160px)/2 + 22px));top:120px;z-index:1;width:150px;height:150px;border-radius:50%;background:var(--saffron);color:var(--ink);display:grid;place-items:center;text-align:center;font-weight:900;text-transform:uppercase;line-height:1;font-size:1.15rem;transform:rotate(-8deg);box-shadow:0 10px 30px rgba(0,0,0,.18)}
-.hero .badge small{display:block;font-size:.62rem;letter-spacing:.14em;margin-top:6px;font-weight:700}
-@media(max-width:760px){.hero{height:auto;min-height:0}.hero picture{position:relative;display:block;aspect-ratio:1/1.08}.hero picture img{position:absolute}.hero{background:var(--cream)}.hero .wrap{padding:0 22px 32px;margin-top:-190px}.hl .ctas{margin-top:22px}.hero .badge{width:104px;height:104px;font-size:.82rem;top:84px;right:14px}}
+.hero .badge{position:absolute;right:max(30px,calc((100vw - 1160px)/2 + 30px));top:124px;z-index:1;width:156px;height:156px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#EDBA55,var(--saffron) 60%,#CF922C);color:var(--ink);display:grid;place-items:center;text-align:center;text-transform:uppercase;line-height:1;transform:rotate(-8deg);box-shadow:0 0 0 5px var(--cream),0 0 0 10px #B8821F,0 0 0 12px #E9C46A,0 14px 34px rgba(0,0,0,.28)}
+.hero .badge::before{content:"";position:absolute;inset:9px;border-radius:50%;border:1.5px dashed rgba(59,38,16,.45)}
+.hero .badge .t1{display:block;font-size:.68rem;font-weight:800;letter-spacing:.22em}
+.hero .badge .t2{display:block;font-size:1.5rem;font-weight:900;letter-spacing:-.02em;margin:5px 0 4px}
+.hero .badge .t3{display:block;font-size:.68rem;font-weight:800;letter-spacing:.22em}
+.hero .badge .t3::before,.hero .badge .t3::after{content:"✦";color:var(--brown);margin:0 5px;font-size:.6rem}
+@media(max-width:760px){.hero{height:auto;min-height:0}.hero picture{position:relative;display:block;aspect-ratio:1/1.08}.hero picture img{position:absolute}.hero{background:var(--cream)}.hero .wrap{padding:0 22px 32px;margin-top:-190px}.hl .ctas{margin-top:22px}.hero .badge{width:108px;height:108px;top:90px;right:18px}.hero .badge .t2{font-size:1.02rem}.hero .badge .t1,.hero .badge .t3{font-size:.5rem;letter-spacing:.16em}.hero .badge::before{inset:6px}}
 
 /* marquee */
 .ticker{position:relative;z-index:2;background:var(--brown);color:var(--cream);white-space:nowrap;padding:16px 0;margin:0 0 12px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;font-size:.95rem}
@@ -91,7 +95,7 @@ header{position:sticky;top:0;z-index:30;padding:0 22px;height:0;overflow:visible
 .step b{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--olive);color:#fff;font-size:.9rem;margin-bottom:14px}
 .step p{color:#6b5a45;font-size:.95rem;margin-top:6px}
 
-.bases{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:22px}
+
 .card{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
 .card .ph{aspect-ratio:4/3;background:var(--tan);position:relative;overflow:hidden;display:grid;place-items:center}
 .card .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
@@ -122,6 +126,33 @@ header{position:sticky;top:0;z-index:30;padding:0 22px;height:0;overflow:visible
 @media(max-width:560px){.mlist{columns:1}}
 .note{margin-top:28px;font-size:.85rem;color:#8a7a66}
 
+/* build flow */
+.flow{margin-top:40px;position:relative}
+.fstep{position:relative;padding:0 0 44px 64px}
+.fstep::before{content:"";position:absolute;left:21px;top:44px;bottom:0;width:2px;background:repeating-linear-gradient(var(--line) 0 6px,transparent 6px 12px)}
+.fhead{display:flex;align-items:center;gap:16px;margin:0 0 18px -64px}
+.fhead b{flex:none;display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--brown);color:var(--saffron);font-weight:900;font-size:1.1rem;box-shadow:0 0 0 5px var(--cream)}
+.fhead h3{font-size:1.35rem;font-weight:900;text-transform:uppercase;letter-spacing:-.01em}
+.fhead p{color:#6b5a45;font-size:.92rem}
+.bases{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.tiles{display:grid;gap:14px}
+.tiles.prot{grid-template-columns:repeat(5,1fr)}
+.tiles.top{grid-template-columns:repeat(7,1fr)}
+.tile{text-align:center}
+.tile .im{aspect-ratio:1;border-radius:50%;overflow:hidden;background:var(--tan);box-shadow:0 0 0 3px #fff,0 6px 16px rgba(59,38,16,.12);transition:transform .25s}
+.tile:hover .im{transform:scale(1.05) rotate(-2deg)}
+.tile .im img{width:100%;height:100%;object-fit:cover}
+.tile span{display:block;margin-top:10px;font-weight:700;font-size:.88rem;color:var(--brown);line-height:1.2}
+.tiles.top .tile .im{border-radius:18px}
+.tiles.top .tile span{font-size:.8rem;font-weight:600}
+.more{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:18px}
+.more>span{font-weight:700;font-size:.85rem;color:var(--olive);text-transform:uppercase;letter-spacing:.12em}
+.sauces{display:flex;gap:26px;flex-wrap:wrap}
+.sauce{display:flex;flex-direction:column;align-items:center;gap:10px;font-weight:700;color:var(--brown);font-size:.9rem}
+.sauce i{width:78px;height:78px;border-radius:50% 50% 50% 50%/58% 58% 42% 42%;box-shadow:inset -6px -8px 0 rgba(0,0,0,.07),inset 6px 6px 0 rgba(255,255,255,.35),0 0 0 3px #fff,0 6px 16px rgba(59,38,16,.14)}
+.flow .combo{margin:0 0 0 64px}
+@media(max-width:900px){.tiles.prot{grid-template-columns:repeat(5,1fr)}.tiles.top{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:560px){.flow .bases{grid-template-columns:repeat(3,1fr)}.sauces{gap:14px;justify-content:space-between}.sauce i{width:60px;height:60px}.fstep{padding-left:0}.fstep::before{display:none}.fhead{margin-left:0}.flow .combo{margin:0}.flow .bases{gap:10px}.bases .card .body{padding:10px 12px}.bases .card h3{font-size:.95rem}.bases .card p{display:none}.tiles.prot{grid-template-columns:repeat(3,1fr)}.tiles.top{grid-template-columns:repeat(3,1fr)}}
 /* order */
 .order{background:var(--brown);color:#fff}
 .order h2,.order .eyebrow{color:#fff}.order .eyebrow{color:var(--saffron)}
@@ -201,7 +232,7 @@ footer .soc a{color:#fff;text-decoration:none;font-weight:600}
       <source media="(max-width:760px)" srcset="/hero-bowl-m.jpg">
       <img src="/hero-bowl.jpg" alt="SemSem bowl with chicken and beef shawarma, rice, tabouli, cabbage and tomatoes">
     </picture>
-    <div class="badge"><div>Now on<br>Belmont<small>Lakeview</small></div></div>
+    <div class="badge"><div><span class="t1">Now in</span><span class="t2">Lakeview</span><span class="t3">Chicago</span></div></div>
     <div class="wrap">
       <div class="hl">
         <h1><span>Shawarma,</span><br><span>built your way.</span></h1>
@@ -221,17 +252,25 @@ footer .soc a{color:#fff;text-decoration:none;font-weight:600}
       <div class="eyebrow">Our menu</div>
       <h2>The menu.</h2>
       <p class="lead">Pick a base, add your favorite protein, then finish it fresh with toppings and sauce.</p>
-      <div class="steps">
-        <div class="step"><b>1</b><h3>Pick your base</h3><p>Pita, wrap or bowl.</p></div>
-        <div class="step"><b>2</b><h3>Add a protein</h3><p>Shawarma, grilled chicken, gyros or falafel.</p></div>
-        <div class="step"><b>3</b><h3>Finish it fresh</h3><p>Salads, dips, pickles and a house sauce.</p></div>
-      </div>
-      <div class="bases" id="bases"><div class="card"><div class="ph"><img src="/gyro-pita.jpg" alt="" loading="lazy"></div><div class="body"><h3>Pita</h3><p>Fresh pita, a protein, 3 toppings and a sauce.</p></div></div><div class="card"><div class="ph"><img src="/chicken-wrap.jpg" alt="" loading="lazy"></div><div class="body"><h3>Wrap</h3><p>Toasted wrap, a protein, 4 toppings and a sauce.</p></div></div><div class="card"><div class="ph"><img src="/bowl.jpg" alt="" loading="lazy"></div><div class="body"><h3>Bowl</h3><p>Rice, hummus or lettuce, a protein, 5 toppings and a sauce.</p></div></div></div>
-      <div class="combo" id="combo">Make it a combo: add fries, rice or soup with a fountain drink.</div>
-      <div class="picks">
-        <div class="pick"><h3>Proteins</h3><div class="chips" id="proteins"><span class="chip">Chicken Shawarma</span><span class="chip">Steak Shawarma</span><span class="chip">Grilled Chicken</span><span class="chip">Gyros</span><span class="chip">Falafel</span></div></div>
-        <div class="pick"><h3>Toppings</h3><div class="chips" id="toppings"><span class="chip">Hummus</span><span class="chip">Baba ghanouj</span><span class="chip">Jerusalem salad</span><span class="chip">Arabic salad</span><span class="chip">Tabouli</span><span class="chip">Turkish salad</span><span class="chip">Cucumber yogurt salad</span><span class="chip">Purple cabbage salad</span><span class="chip">Lettuce</span><span class="chip">Tomatoes</span><span class="chip">Cucumber</span><span class="chip">Sumac onions</span><span class="chip">Pickles</span><span class="chip">Jalapeños</span><span class="chip">Pita chips</span><span class="chip">Chickpea salad</span><span class="chip">Feta</span><span class="chip">Black olives</span><span class="chip">Banana peppers</span><span class="chip">Pickled turnips</span><span class="chip">Fried cauliflower</span><span class="chip">Fried eggplant</span><span class="chip">Fried potatoes</span></div></div>
-        <div class="pick sauce"><h3>Sauces</h3><div class="chips" id="sauces"><span class="chip">Tahini</span><span class="chip">Garlic</span><span class="chip">White</span><span class="chip">Fire</span></div></div>
+      <div class="flow">
+        <div class="fstep">
+          <div class="fhead"><b>1</b><div><h3>Pick your base</h3><p>Pita, wrap or bowl.</p></div></div>
+          <div class="bases" id="bases"><div class="card"><div class="ph"><img src="/gyro-pita.jpg" alt="" loading="lazy"></div><div class="body"><h3>Pita</h3><p>Fresh pita · 3 toppings</p></div></div><div class="card"><div class="ph"><img src="/chicken-wrap.jpg" alt="" loading="lazy"></div><div class="body"><h3>Wrap</h3><p>Toasted wrap · 4 toppings</p></div></div><div class="card"><div class="ph"><img src="/bowl.jpg" alt="" loading="lazy"></div><div class="body"><h3>Bowl</h3><p>Rice, hummus or lettuce · 5 toppings</p></div></div></div>
+        </div>
+        <div class="fstep">
+          <div class="fhead"><b>2</b><div><h3>Add a protein</h3><p>Choose one.</p></div></div>
+          <div class="tiles prot" id="proteins"><div class="tile"><div class="im"><img src="/p-chicken-shawarma.jpg" alt="Chicken Shawarma" loading="lazy"></div><span>Chicken Shawarma</span></div><div class="tile"><div class="im"><img src="/p-steak-shawarma.jpg" alt="Steak Shawarma" loading="lazy"></div><span>Steak Shawarma</span></div><div class="tile"><div class="im"><img src="/p-grilled-chicken.jpg" alt="Grilled Chicken" loading="lazy"></div><span>Grilled Chicken</span></div><div class="tile"><div class="im"><img src="/p-gyros.jpg" alt="Gyros" loading="lazy"></div><span>Gyros</span></div><div class="tile"><div class="im"><img src="/p-falafel.jpg" alt="Falafel" loading="lazy"></div><span>Falafel</span></div></div>
+        </div>
+        <div class="fstep">
+          <div class="fhead"><b>3</b><div><h3>Load your toppings</h3><p>3 for pita · 4 for wrap · 5 for bowl.</p></div></div>
+          <div class="tiles top" id="toppings"><div class="tile"><div class="im"><img src="/t-hummus.jpg" alt="Hummus" loading="lazy"></div><span>Hummus</span></div><div class="tile"><div class="im"><img src="/t-baba.jpg" alt="Baba ghanouj" loading="lazy"></div><span>Baba ghanouj</span></div><div class="tile"><div class="im"><img src="/t-tabouli.jpg" alt="Tabouli" loading="lazy"></div><span>Tabouli</span></div><div class="tile"><div class="im"><img src="/t-jerusalem.jpg" alt="Jerusalem salad" loading="lazy"></div><span>Jerusalem salad</span></div><div class="tile"><div class="im"><img src="/t-arabic.jpg" alt="Arabic salad" loading="lazy"></div><span>Arabic salad</span></div><div class="tile"><div class="im"><img src="/t-cucumber-yogurt.jpg" alt="Cucumber yogurt" loading="lazy"></div><span>Cucumber yogurt</span></div><div class="tile"><div class="im"><img src="/t-cabbage.jpg" alt="Purple cabbage" loading="lazy"></div><span>Purple cabbage</span></div><div class="tile"><div class="im"><img src="/t-lettuce.jpg" alt="Lettuce" loading="lazy"></div><span>Lettuce</span></div><div class="tile"><div class="im"><img src="/t-tomatoes.jpg" alt="Tomatoes" loading="lazy"></div><span>Tomatoes</span></div><div class="tile"><div class="im"><img src="/t-cucumber.jpg" alt="Cucumber" loading="lazy"></div><span>Cucumber</span></div><div class="tile"><div class="im"><img src="/t-pickles.jpg" alt="Pickles" loading="lazy"></div><span>Pickles</span></div><div class="tile"><div class="im"><img src="/t-olives.jpg" alt="Black olives" loading="lazy"></div><span>Black olives</span></div><div class="tile"><div class="im"><img src="/t-banana-peppers.jpg" alt="Banana peppers" loading="lazy"></div><span>Banana peppers</span></div><div class="tile"><div class="im"><img src="/t-fries.jpg" alt="Fried potatoes" loading="lazy"></div><span>Fried potatoes</span></div></div>
+          <div class="more"><span>Also:</span><div class="chips" id="more"><span class="chip">Turkish salad</span><span class="chip">Chickpea salad</span><span class="chip">Sumac onions</span><span class="chip">Jalapeños</span><span class="chip">Pickled turnips</span><span class="chip">Feta</span><span class="chip">Pita chips</span><span class="chip">Fried cauliflower</span><span class="chip">Fried eggplant</span></div></div>
+        </div>
+        <div class="fstep">
+          <div class="fhead"><b>4</b><div><h3>Sauce it up</h3><p>Pick your finish.</p></div></div>
+          <div class="sauces" id="sauces"><div class="sauce"><i style="background:#F4EFE2"></i>Garlic</div><div class="sauce"><i style="background:#D9C39A"></i>Tahini</div><div class="sauce"><i style="background:#FFFFFF"></i>White</div><div class="sauce"><i style="background:#D2461E"></i>Fire</div></div>
+        </div>
+        <div class="combo" id="combo">Make it a combo: add fries, rice or soup + a fountain drink.</div>
       </div>
 
       <div class="sub"><div><div class="eyebrow">House favorites</div><h3>SemSem signatures</h3></div></div>
@@ -354,9 +393,13 @@ fetch('/content.json',{cache:'no-store'}).then(r=>r.json()).then(c=>{
   document.querySelectorAll('[data-k]').forEach(el=>{const v=get(c,el.dataset.k);if(v)el.textContent=v});
   const m=c.menu,b=m.build;
   $('#bases').innerHTML=b.bases.map(x=>`<div class="card"><div class="ph">${ph(x.image)}</div><div class="body"><h3>${esc(x.name)}</h3><p>${esc(x.text)}</p></div></div>`).join('');
+  const tile=x=>`<div class="tile"><div class="im">${x.image?`<img src="${esc(x.image)}" alt="${esc(x.name)}" loading="lazy">`:''}</div><span>${esc(x.name)}</span></div>`;
+  $('#proteins').innerHTML=b.proteins.map(tile).join('');
+  $('#toppings').innerHTML=b.toppings.map(tile).join('');
+  $('#more').innerHTML=(b.more_toppings||[]).map(x=>`<span class="chip">${esc(x)}</span>`).join('');
+  $('#sauces').innerHTML=b.sauces.map(x=>`<div class="sauce"><i style="background:${esc(x.color)}"></i>${esc(x.name)}</div>`).join('');
   $('#combo').textContent=b.combo;
-  const chips=(id,a)=>$(id).innerHTML=a.map(x=>`<span class="chip">${esc(x)}</span>`).join('');
-  chips('#proteins',b.proteins);chips('#toppings',b.toppings);chips('#sauces',b.sauces);const list=(id,a)=>$(id).innerHTML=a.map(x=>`<li>${esc(x)}</li>`).join('');list('#sides',m.sides);list('#drinks',m.drinks);
+  const list=(id,a)=>$(id).innerHTML=a.map(x=>`<li>${esc(x)}</li>`).join('');list('#sides',m.sides);list('#drinks',m.drinks);
   $('#signatures').innerHTML=m.signatures.map(x=>`<div class="card"><div class="ph">${ph(x.image)}</div><div class="body"><h3>${esc(x.name)}</h3><p>${esc(x.text)}</p></div></div>`).join('');
   $('#mezze').innerHTML=m.mezze.map(x=>`<div class="mz">${x.image?`<img src="${esc(x.image)}" alt="" loading="lazy">`:''}<div><b>${esc(x.name)}</b><span>${esc(x.note)}</span></div></div>`).join('');
   $('#hours').innerHTML=c.hours.map(h=>`<div><span>${esc(h.days)}</span><b>${esc(h.time)}</b></div>`).join('');

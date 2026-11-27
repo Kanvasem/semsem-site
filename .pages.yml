@@ -72,7 +72,7 @@ content:
             type: object
             fields:
               - name: bases
-                label: Bases
+                label: Step 1 · Bases
                 type: object
                 list: true
                 fields:
@@ -80,9 +80,28 @@ content:
                   - { name: text, label: Description, type: string }
                   - { name: image, label: Photo, type: image }
               - { name: combo, label: Combo note, type: string }
-              - { name: proteins, label: Proteins, type: string, list: true }
-              - { name: toppings, label: Toppings, type: string, list: true }
-              - { name: sauces, label: Sauces, type: string, list: true }
+              - name: proteins
+                label: Step 2 · Proteins
+                type: object
+                list: true
+                fields:
+                  - { name: name, label: Name, type: string }
+                  - { name: image, label: Photo, type: image }
+              - name: toppings
+                label: Step 3 · Toppings (with photo)
+                type: object
+                list: true
+                fields:
+                  - { name: name, label: Name, type: string }
+                  - { name: image, label: Photo, type: image }
+              - { name: more_toppings, label: Step 3 · More toppings (no photo), type: string, list: true }
+              - name: sauces
+                label: Step 4 · Sauces
+                type: object
+                list: true
+                fields:
+                  - { name: name, label: Name, type: string }
+                  - { name: color, label: Swatch colour (hex), type: string }
           - name: signatures
             label: Signatures
             type: object

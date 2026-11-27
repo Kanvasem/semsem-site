@@ -51,58 +51,129 @@
       "bases": [
         {
           "name": "Pita",
-          "text": "Fresh pita, a protein, 3 toppings and a sauce.",
+          "text": "Fresh pita · 3 toppings",
           "image": "/gyro-pita.jpg"
         },
         {
           "name": "Wrap",
-          "text": "Toasted wrap, a protein, 4 toppings and a sauce.",
+          "text": "Toasted wrap · 4 toppings",
           "image": "/chicken-wrap.jpg"
         },
         {
           "name": "Bowl",
-          "text": "Rice, hummus or lettuce, a protein, 5 toppings and a sauce.",
+          "text": "Rice, hummus or lettuce · 5 toppings",
           "image": "/bowl.jpg"
         }
       ],
-      "combo": "Make it a combo: add fries, rice or soup with a fountain drink.",
+      "combo": "Make it a combo: add fries, rice or soup + a fountain drink.",
       "proteins": [
-        "Chicken Shawarma",
-        "Steak Shawarma",
-        "Grilled Chicken",
-        "Gyros",
-        "Falafel"
+        {
+          "name": "Chicken Shawarma",
+          "image": "/p-chicken-shawarma.jpg"
+        },
+        {
+          "name": "Steak Shawarma",
+          "image": "/p-steak-shawarma.jpg"
+        },
+        {
+          "name": "Grilled Chicken",
+          "image": "/p-grilled-chicken.jpg"
+        },
+        {
+          "name": "Gyros",
+          "image": "/p-gyros.jpg"
+        },
+        {
+          "name": "Falafel",
+          "image": "/p-falafel.jpg"
+        }
       ],
       "toppings": [
-        "Hummus",
-        "Baba ghanouj",
-        "Jerusalem salad",
-        "Arabic salad",
-        "Tabouli",
-        "Turkish salad",
-        "Cucumber yogurt salad",
-        "Purple cabbage salad",
-        "Lettuce",
-        "Tomatoes",
-        "Cucumber",
-        "Sumac onions",
-        "Pickles",
-        "Jalapeños",
-        "Pita chips",
-        "Chickpea salad",
-        "Feta",
-        "Black olives",
-        "Banana peppers",
-        "Pickled turnips",
-        "Fried cauliflower",
-        "Fried eggplant",
-        "Fried potatoes"
+        {
+          "name": "Hummus",
+          "image": "/t-hummus.jpg"
+        },
+        {
+          "name": "Baba ghanouj",
+          "image": "/t-baba.jpg"
+        },
+        {
+          "name": "Tabouli",
+          "image": "/t-tabouli.jpg"
+        },
+        {
+          "name": "Jerusalem salad",
+          "image": "/t-jerusalem.jpg"
+        },
+        {
+          "name": "Arabic salad",
+          "image": "/t-arabic.jpg"
+        },
+        {
+          "name": "Cucumber yogurt",
+          "image": "/t-cucumber-yogurt.jpg"
+        },
+        {
+          "name": "Purple cabbage",
+          "image": "/t-cabbage.jpg"
+        },
+        {
+          "name": "Lettuce",
+          "image": "/t-lettuce.jpg"
+        },
+        {
+          "name": "Tomatoes",
+          "image": "/t-tomatoes.jpg"
+        },
+        {
+          "name": "Cucumber",
+          "image": "/t-cucumber.jpg"
+        },
+        {
+          "name": "Pickles",
+          "image": "/t-pickles.jpg"
+        },
+        {
+          "name": "Black olives",
+          "image": "/t-olives.jpg"
+        },
+        {
+          "name": "Banana peppers",
+          "image": "/t-banana-peppers.jpg"
+        },
+        {
+          "name": "Fried potatoes",
+          "image": "/t-fries.jpg"
+        }
       ],
       "sauces": [
-        "Tahini",
-        "Garlic",
-        "White",
-        "Fire"
+        {
+          "name": "Garlic",
+          "color": "#F4EFE2"
+        },
+        {
+          "name": "Tahini",
+          "color": "#D9C39A"
+        },
+        {
+          "name": "White",
+          "color": "#FFFFFF"
+        },
+        {
+          "name": "Fire",
+          "color": "#D2461E"
+        }
+      ],
+      "more_toppings": [
+        "Turkish salad",
+        "Chickpea salad",
+        "Sumac onions",
+        "Jalapeños",
+        "Pickled turnips",
+        "Feta",
+        "Pita chips",
+        "Fried cauliflower",
+        "Fried eggplant"
       ]
     },
     "signatures": [
