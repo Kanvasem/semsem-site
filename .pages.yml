@@ -50,6 +50,12 @@ content:
           - { name: text, label: Text, type: string }
           - { name: button_label, label: Button text, type: string }
           - { name: button_url, label: Button link, type: string }
+      - name: instagram
+        label: Instagram feed
+        type: object
+        fields:
+          - { name: url, label: Instagram profile URL, type: string }
+          - { name: behold_feed_id, label: Behold feed ID (live feed), type: string }
       - name: social
         label: Social links
         type: object
