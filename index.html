@@ -205,6 +205,11 @@ header{position:sticky;top:0;z-index:30;background:var(--cream);border-bottom:1p
 
 .dlv{min-height:54px;padding:10px 24px}.dlv img{height:22px;width:auto}
 /* catering */
+.cat-pts{list-style:none;margin:6px 0 26px}
+.cat-pts li{padding:9px 0 9px 28px;border-bottom:1px dashed var(--line);position:relative}
+.cat-pts li::before{content:"✓";position:absolute;left:4px;color:var(--olive);font-weight:900}
+.cat-pts b{color:var(--brown)}
+
 .cater{display:grid;grid-template-columns:1fr 1.15fr;gap:48px;align-items:center}
 .cater .imgs{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .cater .imgs img{border-radius:var(--r);aspect-ratio:1;object-fit:cover;width:100%}
@@ -364,8 +369,9 @@ header{position:sticky;top:0;z-index:30;background:var(--cream);border-bottom:1p
       <div>
         <div class="eyebrow">Catering</div>
         <h2 data-k="catering.title">Catering for any crowd</h2>
-        <p class="lead" data-k="catering.text">Shawarma platters, salads, dips, rice and grape leaves for offices, parties and game days. Tell us about your event and we'll put together the spread.</p>
-        <a class="btn btn-dark soon" id="cater-btn">Request catering <span class="tag">Coming soon</span></a>
+        <p class="lead" data-k="catering.text">Shawarma trays, falafel, dips and salads for offices, parties and game days. Pickup on Belmont.</p>
+        <ul class="cat-pts"><li><b>Packages</b> for 5, 10 or 20 people, from $69.99</li><li><b>Shawarma boxes &amp; trays</b> from $39.99</li><li><b>Half &amp; full trays</b> à la carte</li></ul>
+        <a class="btn btn-dark" href="/catering">See catering menu →</a>
       </div>
       <div class="imgs">
         <img src="/catering-trays.jpg" alt="Catering trays of salads, grape leaves and rice" loading="lazy">
@@ -465,7 +471,6 @@ fetch('/content.json',{cache:'no-store'}).then(r=>r.json()).then(c=>{
   link($('#pickup'),c.order.pickup_url,c.order.pickup_label);
   $('#delivery').innerHTML='';
   c.order.delivery.forEach(d=>{const a=document.createElement('a');a.className='btn btn-light dlv';$('#delivery').append(a);link(a,d.url,d.name);if(d.logo){a.querySelector('.tag')?.remove();const tg=a.classList.contains('soon');a.innerHTML=`<img src="${esc(d.logo)}" alt="${esc(d.name)}">`+(tg?' <span class="tag">Coming soon</span>':'')}});
-  link($('#cater-btn'),c.catering.button_url,c.catering.button_label);
   link($('#jobs-btn'),c.jobs.button_url,c.jobs.button_label);
   const ig=c.instagram||{};
   if(ig.url){$('#ig-btn').href=ig.url;document.querySelectorAll('.ig-grid a').forEach(a=>a.href=ig.url)}
