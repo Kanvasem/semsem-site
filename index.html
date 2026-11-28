@@ -168,6 +168,15 @@ header{position:sticky;top:0;z-index:30;background:var(--cream);border-bottom:1p
 .note{margin-top:28px;font-size:.85rem;color:#8a7a66}
 
 .nm{text-transform:none!important}
+/* menu tabs */
+.mtabs{position:sticky;top:84px;z-index:20;display:flex;gap:10px;overflow-x:auto;scrollbar-width:none;padding:14px 0;margin:22px 0 0;background:#F6F0E6;box-shadow:0 0 0 100vmax #F6F0E6;clip-path:inset(0 -100vmax)}
+.mtabs::-webkit-scrollbar{display:none}
+.mtabs a{flex:none;display:flex;align-items:center;gap:10px;padding:6px 18px 6px 6px;border-radius:999px;background:#fff;border:1.5px solid var(--line);text-decoration:none;color:var(--brown);font-weight:800;font-size:.95rem;transition:background .2s,color .2s,border-color .2s}
+.mtabs a img{width:38px;height:38px;border-radius:50%;object-fit:cover}
+.mtabs a:hover{border-color:var(--brown)}
+.mtabs a.on{background:var(--brown);color:var(--cream);border-color:var(--brown)}
+#m-build,#m-sig,#m-mezze,#m-sides{scroll-margin-top:170px}
+@media(max-width:760px){.mtabs{top:72px;gap:8px;padding:10px 0}.mtabs a{font-size:.85rem;padding:5px 14px 5px 5px}.mtabs a img{width:30px;height:30px}#m-build,#m-sig,#m-mezze,#m-sides{scroll-margin-top:140px}}
 /* build flow */
 .flow{margin-top:64px;position:relative}
 .fstep{position:relative;padding:0 0 104px 64px}
@@ -298,8 +307,14 @@ header{position:sticky;top:0;z-index:30;background:var(--cream);border-bottom:1p
     <div class="wrap">
       <div class="eyebrow">Our menu</div>
       <h2>The menu.</h2>
-      <p class="lead">Pick a base, add your favorite protein, then finish it fresh with toppings and sauce.</p>
-      <div class="flow">
+      <p class="lead">Build your own, or grab a house favorite.</p>
+      <nav class="mtabs" aria-label="Menu sections">
+        <a href="#m-build" class="on"><img src="/bowl.jpg" alt="">Build your own</a>
+        <a href="#m-sig"><img src="/shawarma-garden.jpg" alt="">Signatures</a>
+        <a href="#m-mezze"><img src="/hummus.jpg" alt="">Mezze &amp; plates</a>
+        <a href="#m-sides"><img src="/t-fries.jpg" alt="">Sides &amp; drinks</a>
+      </nav>
+      <div class="flow" id="m-build">
         <div class="fstep">
           <div class="fhead"><b>1</b><div><h3>Pick your base</h3><p>Pita, wrap or bowl.</p></div></div>
           <div class="bases" id="bases"><div class="card"><div class="ph"><img src="/gyro-pita.jpg" alt="" loading="lazy"></div><div class="body"><h3>Pita</h3><p>Fresh pita · 3 toppings</p></div></div><div class="card"><div class="ph"><img src="/chicken-wrap.jpg" alt="" loading="lazy"></div><div class="body"><h3>Wrap</h3><p>Toasted wrap · 4 toppings</p></div></div><div class="card"><div class="ph"><img src="/bowl.jpg" alt="" loading="lazy"></div><div class="body"><h3>Bowl</h3><p>Rice, hummus or lettuce · 5 toppings</p></div></div></div>
@@ -331,13 +346,13 @@ header{position:sticky;top:0;z-index:30;background:var(--cream);border-bottom:1p
         </div>
       </div>
 
-      <div class="sub"><div><div class="eyebrow">House favorites</div><h3><span class="nm">SemSem</span> signatures</h3></div></div>
+      <div class="sub" id="m-sig"><div><div class="eyebrow">House favorites</div><h3><span class="nm">SemSem</span> signatures</h3></div></div>
       <div class="grid4" id="signatures"><div class="card"><div class="ph"><img src="/chicken-over-rice.jpg" alt="" loading="lazy"></div><div class="body"><h3>Chicken Over Rice</h3><p>Grilled chicken, tomatoes, lettuce and our famous white &amp; fire sauce with toasted pita.</p></div></div><div class="card"><div class="ph"><img class="mark" src="/logo.png" alt=""></div><div class="body"><h3>Gyro Over Rice</h3><p>Gyros, onions, green peppers, tomatoes, lettuce, white &amp; fire sauce and toasted pita.</p></div></div><div class="card"><div class="ph"><img src="/shawarma-garden.jpg" alt="" loading="lazy"></div><div class="body"><h3>Shawarma Garden</h3><p>Chicken or steak shawarma cut into pieces, with veggies, coleslaw, sauce and fries.</p></div></div><div class="card"><div class="ph"><img src="/shawarma-halabi.jpg" alt="" loading="lazy"></div><div class="body"><h3>Shawarma Halabi</h3><p>Chicken or steak with peppers, olives, pickles and melted cheese, served with veggies, coleslaw and fries.</p></div></div><div class="card"><div class="ph"><img src="/shawarma-plate.jpg" alt="" loading="lazy"></div><div class="body"><h3>Shawarma Bashka</h3><p>Peppers, olives, mushrooms, pickles, cheese, BBQ &amp; garlic sauce, with veggies, coleslaw and fries.</p></div></div><div class="card"><div class="ph"><img src="/steak-wrap.jpg" alt="" loading="lazy"></div><div class="body"><h3>SemSem Roll</h3><p>Falafel, chicken or steak, rolled tight with pickles and house sauce.</p></div></div><div class="card"><div class="ph"><img src="/vegetarian-plate.jpg" alt="" loading="lazy"></div><div class="body"><h3>Vegetarian Plate</h3><p>Hummus, baba ghanouj, two salads, 3 falafel, 2 grape leaves and two pitas.</p></div></div><div class="card"><div class="ph"><img class="mark" src="/logo.png" alt=""></div><div class="body"><h3>Zinger Combo</h3><p>Extra-crispy chicken filet, pickles, tomato, lettuce, cheese and spicy Zinger sauce with fries.</p></div></div></div>
 
-      <div class="sub"><div><div class="eyebrow">To share</div><h3>Mezze &amp; plates</h3></div></div>
+      <div class="sub" id="m-mezze"><div><div class="eyebrow">To share</div><h3>Mezze &amp; plates</h3></div></div>
       <div class="mezze" id="mezze"><div class="mz"><img src="/hummus.jpg" alt="" loading="lazy"><div><b>Hummus</b><span>Small · Large</span></div></div><div class="mz"><img src="/baba-ghanouj.jpg" alt="" loading="lazy"><div><b>Baba Ghanouj</b><span>Small · Large</span></div></div><div class="mz"><div><b>Topped Hummus</b><span>With chicken or steak</span></div></div><div class="mz"><div><b>Falafel</b><span>Piece · Dozen</span></div></div><div class="mz"><div><b>Stuffed Falafel</b><span>Onions, sumac, sesame</span></div></div><div class="mz"><div><b>Shawarma Plate</b><span>Chicken or steak · Small · Large</span></div></div><div class="mz"><div><b>Gyros Plate</b><span>With cucumber yogurt salad and fries</span></div></div></div>
 
-      <div class="lists">
+      <div class="lists" id="m-sides">
         <div class="pick"><h3>Sides &amp; extras</h3><ul class="mlist" id="sides"><li>Lentil Soup</li><li>Grape Leaves (6)</li><li>Salad</li><li>Rice</li><li>Fries</li><li>Baklava</li><li>Extra Pita</li></ul></div>
         <div class="pick"><h3>Drinks</h3><ul class="mlist" id="drinks"><li>Fountain Drink</li><li>Water</li><li>Yogurt Drink</li><li>Hot Tea</li></ul></div>
       </div>
@@ -391,7 +406,7 @@ header{position:sticky;top:0;z-index:30;background:var(--cream);border-bottom:1p
           <div><h3>Address</h3><div class="big" data-k="address">964 W Belmont Ave</div><div data-k="city">Chicago, IL 60657</div></div>
           <div><h3>Hours</h3><div class="hrs" id="hours"><div><span>Every day</span><b>11am – 10pm</b></div></div></div>
           <div id="phone-wrap" hidden=""><h3>Phone</h3><a class="big" id="phone" href="#"></a></div>
-          <a class="btn btn-line" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=964+W+Belmont+Ave,+Chicago,+IL+60657">Get directions</a>
+          <div class="ctas" style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn btn-line" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=964+W+Belmont+Ave,+Chicago,+IL+60657">Get directions</a><a class="btn btn-line" target="_blank" rel="noopener" href="https://share.google/2vPyRZ0HANAKCUsoM">See us on Google</a></div>
         </div>
         <div class="map"><iframe title="Map to SemSem, 964 W Belmont Ave" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=964+W+Belmont+Ave,+Chicago,+IL+60657&amp;output=embed"></iframe></div>
       </div>
@@ -427,7 +442,7 @@ header{position:sticky;top:0;z-index:30;background:var(--cream);border-bottom:1p
 
 <footer class="ft">
   <div class="wrap ft-cols">
-    <div><h4>Visit</h4><p>964 W Belmont Ave<br>Chicago, IL 60657</p><p>Open daily<br>11am – 10pm</p><a href="https://www.google.com/maps/dir/?api=1&amp;destination=964+W+Belmont+Ave,+Chicago,+IL+60657" target="_blank" rel="noopener">Get directions ↗</a></div>
+    <div><h4>Visit</h4><p>964 W Belmont Ave<br>Chicago, IL 60657</p><p>Open daily<br>11am – 10pm</p><a href="https://www.google.com/maps/dir/?api=1&amp;destination=964+W+Belmont+Ave,+Chicago,+IL+60657" target="_blank" rel="noopener">Get directions ↗</a><a href="https://share.google/2vPyRZ0HANAKCUsoM" target="_blank" rel="noopener">Google reviews ↗</a></div>
     <div><h4>Explore</h4><a href="#menu">Menu</a><a href="#order">Order</a><a href="/catering">Catering</a><a href="#visit">Hours &amp; location</a></div>
     <div><h4>Company</h4><a href="https://tally.so/r/kbbRjd" target="_blank" rel="noopener" id="ft-jobs">Work with us</a><a href="#catering">Catering requests</a></div>
     <div><h4>Follow</h4><a href="https://www.instagram.com/semsemonbelmont/" target="_blank" rel="noopener" id="ft-ig">Instagram ↗<br><small>@semsemonbelmont</small></a></div>
@@ -450,6 +465,9 @@ function link(el,url,label){
 }
 const ph=img=>img?`<img src="${esc(img)}" alt="" loading="lazy">`:`<img class="mark" src="/logo.png" alt="">`;
 $('#yr').textContent=new Date().getFullYear();
+(()=>{const tabs=[...document.querySelectorAll('.mtabs a')];const secs=tabs.map(a=>document.querySelector(a.getAttribute('href')));
+let lock=0;const set=()=>{if(Date.now()<lock)return;let cur=0;const th=innerHeight*0.4;secs.forEach((s,i)=>{if(s&&s.getBoundingClientRect().top<th)cur=i});tabs.forEach((a,i)=>a.classList.toggle('on',i===cur));const on=tabs[cur];if(on&&on.parentElement.scrollWidth>on.parentElement.clientWidth)on.parentElement.scrollTo({left:on.offsetLeft-20,behavior:'smooth'})};
+tabs.forEach((a,i)=>a.addEventListener('click',()=>{lock=Date.now()+1200;tabs.forEach((b,j)=>b.classList.toggle('on',j===i))}));let t;addEventListener('scroll',()=>{clearTimeout(t);t=setTimeout(set,60)},{passive:true});set()})();
 const tk=['Chicken shawarma','Steak shawarma','Falafel','Hummus','Bowls','Wraps','Open daily 11am–10pm','964 W Belmont Ave'];
 const one=tk.map(t=>`<span>${t}</span><i>✦</i>`).join('');$('#ticker').innerHTML=one+one+one+one;
 
